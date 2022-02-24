@@ -93,7 +93,7 @@ $(function () {
     .trigger("scroll");
 });
 
-// starts evaluation
+// starts evaluation c1
 
 $(".btn.one").mouseenter(function () {
   $(".evaluare-text").text("Excelent");
@@ -119,11 +119,192 @@ $(".rating").mouseleave(function () {
 
 //arrow div hide/show
 
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+const targetDiv = document.getElementById("myDiv");
+const btn = document.getElementById("arrow1");
+btn.onclick = function () {
+  if (targetDiv.style.display === "none") {
+    targetDiv.style.display = "block";
+    btn.style.transform = "rotate(180deg)";
   } else {
-    x.style.display = "none";
+    targetDiv.style.display = "none";
+    btn.style.transform = "rotate(360deg)";
   }
-}
+};
+
+// starts evaluation c1
+
+$(".one2").mouseenter(function () {
+  $(".evaluare-textModal2").text("Excelent");
+});
+$(".two2").mouseenter(function () {
+  $(".evaluare-textModal2").text("Foarte Bun");
+});
+$(".three2").mouseenter(function () {
+  $(".evaluare-textModal2").text("Bun");
+});
+$(".four2").mouseenter(function () {
+  $(".evaluare-textModal2").text("Decent");
+});
+$(".five2").mouseenter(function () {
+  $(".evaluare-textModal2").text("Slab");
+});
+
+$(".rating").mouseleave(function () {
+  $(".evaluare-textModal2").text("Lasă o notă!");
+});
+
+//end stars
+
+// modal 2 show/hide
+
+const targetDiv2 = document.getElementById("myDiv2");
+const btn2 = document.getElementById("arrow-2");
+btn2.onclick = function () {
+  if (targetDiv2.style.display === "none") {
+    targetDiv2.style.display = "block";
+    btn2.style.transform = "rotate(90deg)";
+  } else {
+    targetDiv2.style.display = "none";
+    btn2.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 3 show/hide
+
+const targetDiv3 = document.getElementById("myDiv3");
+const btn3 = document.getElementById("arrow-3");
+btn3.onclick = function () {
+  if (targetDiv3.style.display === "none") {
+    targetDiv3.style.display = "block";
+    btn3.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv3.style.display = "none";
+    btn3.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 4 show/hide
+
+const targetDiv4 = document.getElementById("myDiv4");
+const btn4 = document.getElementById("arrow-4");
+btn4.onclick = function () {
+  if (targetDiv4.style.display === "none") {
+    targetDiv4.style.display = "block";
+    btn4.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv4.style.display = "none";
+    btn4.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 5 show/hide
+
+const targetDiv5 = document.getElementById("myDiv5");
+const btn5 = document.getElementById("arrow-5");
+btn5.onclick = function () {
+  if (targetDiv5.style.display === "none") {
+    targetDiv5.style.display = "block";
+    btn5.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv5.style.display = "none";
+    btn5.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 6 show/hide
+
+const targetDiv6 = document.getElementById("myDiv6");
+const btn6 = document.getElementById("arrow-6");
+btn6.onclick = function () {
+  if (targetDiv6.style.display === "none") {
+    targetDiv6.style.display = "block";
+    btn6.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv6.style.display = "none";
+    btn6.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 7 show/hide
+
+const targetDiv7 = document.getElementById("myDiv7");
+const btn7 = document.getElementById("arrow-7");
+btn7.onclick = function () {
+  if (targetDiv7.style.display === "none") {
+    targetDiv7.style.display = "block";
+    btn7.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv7.style.display = "none";
+    btn7.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 8 show/hide
+
+const targetDiv8 = document.getElementById("myDiv8");
+const btn8 = document.getElementById("arrow-8");
+btn8.onclick = function () {
+  if (targetDiv8.style.display === "none") {
+    targetDiv8.style.display = "block";
+    btn8.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv8.style.display = "none";
+    btn8.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 9 show/hide
+
+const targetDiv9 = document.getElementById("myDiv9");
+const btn9 = document.getElementById("arrow-9");
+btn9.onclick = function () {
+  if (targetDiv9.style.display === "none") {
+    targetDiv9.style.display = "block";
+    btn9.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv9.style.display = "none";
+    btn9.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 10 show/hide
+
+const targetDiv10 = document.getElementById("myDiv10");
+const btn10 = document.getElementById("arrow-10");
+btn10.onclick = function () {
+  if (targetDiv10.style.display === "none") {
+    targetDiv10.style.display = "block";
+    btn10.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv10.style.display = "none";
+    btn10.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 11 show/hide
+
+const targetDiv11 = document.getElementById("myDiv11");
+const btn11 = document.getElementById("arrow-11");
+btn11.onclick = function () {
+  if (targetDiv11.style.display === "none") {
+    targetDiv11.style.display = "block";
+    btn11.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv11.style.display = "none";
+    btn11.style.transform = "rotate(360deg)";
+  }
+};
+
+// modal 12 show/hide
+
+const targetDiv12 = document.getElementById("myDiv12");
+const btn12 = document.getElementById("arrow-12");
+btn12.onclick = function () {
+  if (targetDiv12.style.display === "none") {
+    targetDiv12.style.display = "block";
+    btn12.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv12.style.display = "none";
+    btn12.style.transform = "rotate(360deg)";
+  }
+};
