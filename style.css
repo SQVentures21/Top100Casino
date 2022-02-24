@@ -222,7 +222,7 @@ navbar style */
   display: none;
 }
 
-.cardOne {
+.card {
   height: 489px;
   width: 320px;
   border-radius: 16px;
@@ -245,10 +245,13 @@ navbar style */
 .card-section-ranking-columns3 {
   display: flex;
   border-bottom: 2px solid #efefef;
+  justify-content: center;
 }
 
 .ranking-nr1 {
   position: relative;
+  width: 88px;
+  height: 88px;
 }
 
 .ranking-nr1 p {
@@ -320,7 +323,7 @@ svg.radial-progress text {
 }
 
 svg.radial-progress:nth-of-type(6n + 1) circle {
-  stroke: #d7d8d8;
+  stroke: #ffbb00;
 }
 
 /* finish scroll csss bar */
@@ -348,6 +351,12 @@ svg.radial-progress:nth-of-type(6n + 1) circle {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.single-text-extra {
+  height: 52px;
+  width: 288px;
+  padding: 15px 0 15px 0;
 }
 
 .card-section-Evaluare {
@@ -446,20 +455,24 @@ css button */
 }
 
 /* arrow container */
+
+#myDiv {
+  transition: 2s all;
+}
 .arrow-section {
   display: flex;
   justify-content: center;
 }
 
-.arrow {
+.arrow-modal {
   border-radius: 32px;
   padding: 8px;
   background: #eeeeee;
   cursor: pointer;
+  transition: 0.7s all;
 }
 
 .card-Arrow {
-  height: 700px;
   width: 320px;
   background: #f6f6f6;
   border-radius: 0px 0px 16px 16px;
@@ -487,6 +500,7 @@ css button */
   display: flex;
   gap: 12px;
   padding: 8px 0 32px 0;
+  flex-wrap: wrap;
 }
 
 .card-Arrow-section-2 {
@@ -540,6 +554,163 @@ css button */
   margin: 8px 8px 32px 0;
 }
 
+.card-Arrow-section-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-Arrow-section-4-p1 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 14px;
+}
+
+.card-arrow-status1 {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+
+.card-Arrow-section-3-p2 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #080d0c99;
+  padding-top: 3px;
+}
+
+.card-Arrow-section-5-p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.card-Arrow-section-5-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.card-Arrow-section-5-images img {
+  border-radius: 4px;
+}
+
+/* card 2 */
+
+.ranking-red {
+  background-color: #fe5f55;
+  color: white;
+}
+
+.ranking-green {
+  background: #34524d;
+  color: white;
+  padding: 6px 4px !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* card 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 */
+
+.ranking-margin-top {
+  padding-top: 24px;
+}
+
+.circle-ranking {
+  height: 40px;
+  width: 40px;
+  border-radius: 48px;
+  background: rgba(18, 21, 43, 0.08);
+  border-radius: 48px;
+  text-align: center;
+}
+
+.circle-ranking h3 {
+  padding-top: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.ranking-padding-extra-top {
+  padding: 23px 25px 0 25px;
+}
+
+/* bottom image cards */
+
+.main-cards-bottom-img {
+  width: 100%;
+}
+
+/* bonus section */
+
+.bonus-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 64px 0 16px;
+}
+
+.bonus-card {
+  height: 268px;
+  width: 312px;
+  border-radius: 16px;
+  padding: 32px 24px 64px;
+  margin-bottom: 20px;
+}
+
+.card1-bg {
+  background: url("./assets/images/card-background.jpg");
+  position: relative;
+}
+
+.bonus-card-h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.bonus-card-p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bonus-card-image-1 {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Caroussel css */
 
 .mySlides {
