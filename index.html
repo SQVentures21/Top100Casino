@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     <link href="./dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <title>Document</title>
   </head>
   <body>
@@ -3365,113 +3365,315 @@
     </section>
 
     <section class="Bonus-section">
-      <div class="container-width80-flex">
-        <div class="bonus-title">
-          Important de stiut despre bonusurile de cazino
+      <div class="bonus-title">
+        Important de stiut despre bonusurile de cazino
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="bonus-card card1-bg">
+              <h3 class="bonus-card-h3">Procentajul bonusului</h3>
+              <p class="bonus-card-p">
+                Menționat tot timpul în oferta de bonus. Cel mai întâlnit e cel
+                de 100%, unde depui o sumă de bani și primești echivalentul ei,
+                pe lângă depozitul inițial. Există și bonusuri de 150%, 200% sau
+                chiar mai mult - atunci încep lucrurile să devină cu adevărat
+                interesante.
+              </p>
+              <img
+                class="bonus-card-image-1"
+                src="./assets/icons/icon-bonus-percentage.svg"
+                alt=""
+                width="100px"
+                height="100px"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bonus-card card2-bg">
+              <h3 class="bonus-card-h3">Cerințe de rulaj</h3>
+              <p class="bonus-card-p">
+                Satisfacția bonusului la depunere vine la pachet și cu
+                provocarea rulării acestuia. În funcție de termenii și
+                condițiile cazinoului, bonusul trebuie rulat de un anumit număr
+                de ori pentru a putea fi retras în totalitate pe cardul tău.
+              </p>
+              <img
+                class="bonus-card-image-1"
+                src="./assets/icons/icon-rules.svg"
+                width="100px"
+                height="100px"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bonus-card card3-bg">
+              <h3 class="bonus-card-h3">Jocurile disponibile</h3>
+              <p class="bonus-card-p">
+                Bonusul poate fi rulat doar la anumite jocuri, specificate de
+                către cazinou. Aceasta nu reprezintă o problemă însă.
+                Majoritatea cazinourilor te întâmpină să rulezi bonusul la
+                sloturi populare, precum Shining Crown, Sizzling Hot sau Book of
+                Ra
+              </p>
+              <img
+                class="bonus-card-image-1"
+                src="./assets/icons/icon-casino-games.svg"
+                width="100px"
+                height="100px"
+              />
+            </div>
+          </div>
         </div>
-        <div class="bonus-cards">
-          <div class="bonus-card card1-bg">
-            <h3 class="bonus-card-h3">Procentajul bonusului</h3>
-            <p class="bonus-card-p">
-              Menționat tot timpul în oferta de bonus. Cel mai întâlnit e cel de
-              100%, unde depui o sumă de bani și primești echivalentul ei, pe
-              lângă depozitul inițial. Există și bonusuri de 150%, 200% sau
-              chiar mai mult - atunci încep lucrurile să devină cu adevărat
-              interesante.
-            </p>
-            <img
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="bonus-cards">
+        <div class="bonus-card card1-bg">
+          <h3 class="bonus-card-h3">Procentajul bonusului</h3>
+          <p class="bonus-card-p">
+            Menționat tot timpul în oferta de bonus. Cel mai întâlnit e cel de
+            100%, unde depui o sumă de bani și primești echivalentul ei, pe
+            lângă depozitul inițial. Există și bonusuri de 150%, 200% sau chiar
+            mai mult - atunci încep lucrurile să devină cu adevărat interesante.
+          </p>
+          <img
             class="bonus-card-image-1"
-              src="./assets/icons/icon-rules.svg"
-              alt=""
-              width="100px"
-              height="100px"
-            />
-          </div>
-          <div class="bonus-card card2-bg">
-            <h3 class="bonus-card-h3">Cerințe de rulaj</h3>
-            <p class="bonus-card-p">
-              Satisfacția bonusului la depunere vine la pachet și cu provocarea
-              rulării acestuia. În funcție de termenii și condițiile cazinoului,
-              bonusul trebuie rulat de un anumit număr de ori pentru a putea fi
-              retras în totalitate pe cardul tău.
-            </p>
-          </div>
-          <div class="bonus-card card3-bg">
-            <h3 class="bonus-card-h3">Jocurile disponibile</h3>
-            <p class="bonus-card-p">
-              Bonusul poate fi rulat doar la anumite jocuri, specificate de
-              către cazinou. Aceasta nu reprezintă o problemă însă. Majoritatea
-              cazinourilor te întâmpină să rulezi bonusul la sloturi populare,
-              precum Shining Crown, Sizzling Hot sau Book of Ra
-            </p>
-          </div>
+            src="./assets/icons/icon-bonus-percentage.svg"
+            alt=""
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="bonus-card card2-bg">
+          <h3 class="bonus-card-h3">Cerințe de rulaj</h3>
+          <p class="bonus-card-p">
+            Satisfacția bonusului la depunere vine la pachet și cu provocarea
+            rulării acestuia. În funcție de termenii și condițiile cazinoului,
+            bonusul trebuie rulat de un anumit număr de ori pentru a putea fi
+            retras în totalitate pe cardul tău.
+          </p>
+          <img
+            class="bonus-card-image-1"
+            src="./assets/icons/icon-rules.svg"
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="bonus-card card3-bg">
+          <h3 class="bonus-card-h3">Jocurile disponibile</h3>
+          <p class="bonus-card-p">
+            Bonusul poate fi rulat doar la anumite jocuri, specificate de către
+            cazinou. Aceasta nu reprezintă o problemă însă. Majoritatea
+            cazinourilor te întâmpină să rulezi bonusul la sloturi populare,
+            precum Shining Crown, Sizzling Hot sau Book of Ra
+          </p>
+          <img
+            class="bonus-card-image-1"
+            src="./assets/icons/icon-casino-games.svg"
+            width="100px"
+            height="100px"
+          />
         </div>
       </div>
     </section>
 
     <section class="steps-section">
-      <img src="" alt="" class="setps-section-img" />
+      <img
+        src="./assets/images/romanian-illustration_desktop.png"
+        alt=""
+        class="setps-section-img"
+        width="164px"
+        height="164px"
+      />
+
       <h1 class="setps-section-h1">Pașii necesari pentru a juca la cazino</h1>
-      <div class="steps-section-mainSteps">
-        <div class="steps-section-stepOne">
-          <img class="steps-section-stepOne-img" src="" alt="" />
-          <h2 class="steps-section-stepOne-h2">Alege Cazinoul</h2>
-          <p class="steps-section-stepOne-p">
-            Compară cazinourile și ia decizia
-          </p>
+      <div class="steps-width80">
+        <div class="steps-section-mainSteps">
+          <div class="steps-section-stepOne">
+            <img
+              class="steps-section-stepOne-img"
+              src="./assets/icons/step1.png"
+              alt=""
+              width="90px"
+              height="70px"
+            />
+            <h2 class="steps-section-stepOne-h2">Alege Cazinoul</h2>
+            <p class="steps-section-stepOne-p">
+              Compară cazinourile și ia decizia
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="steps-section-mainSteps">
-        <div class="steps-section-stepOne">
-          <img class="steps-section-stepOne-img" src="" alt="" />
-          <h2 class="steps-section-stepOne-h2">Înregistrează-te</h2>
-          <p class="steps-section-stepOne-p">
-            Apasă pe ”Ia Bonusul” și fă-ți cont
-          </p>
+        <div class="steps-section-mainSteps">
+          <div class="steps-section-stepOne">
+            <img
+              class="steps-section-stepOne-img"
+              src="./assets/icons/step2.png"
+              alt=""
+              width="90px"
+              height="70px"
+            />
+            <h2 class="steps-section-stepOne-h2">Înregistrează-te</h2>
+            <p class="steps-section-stepOne-p">
+              Apasă pe ”Ia Bonusul” și fă-ți cont
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="steps-section-mainSteps">
-        <div class="steps-section-stepOne">
-          <img class="steps-section-stepOne-img" src="" alt="" />
-          <h2 class="steps-section-stepOne-h2">Verificarea contului (KYC)</h2>
-          <p class="steps-section-stepOne-p">Trimite documentele</p>
+        <div class="steps-section-mainSteps">
+          <div class="steps-section-stepOne">
+            <img
+              class="steps-section-stepOne-img"
+              src="./assets/icons/step3.png"
+              alt=""
+              width="90px"
+              height="70px"
+            />
+            <h2 class="steps-section-stepOne-h2">Verificarea contului (KYC)</h2>
+            <p class="steps-section-stepOne-p">Trimite documentele</p>
+          </div>
         </div>
-      </div>
-      <div class="steps-section-mainSteps">
-        <div class="steps-section-stepOne">
-          <img class="steps-section-stepOne-img" src="" alt="" />
-          <h2 class="steps-section-stepOne-h2">Profită de bonus</h2>
-          <p class="steps-section-stepOne-p">Joacă și câștigă!</p>
+        <div class="steps-section-mainSteps">
+          <div class="steps-section-stepOne">
+            <img
+              class="steps-section-stepOne-img"
+              src="./assets/icons/step4.png"
+              alt=""
+              width="90px"
+              height="70px"
+            />
+            <h2 class="steps-section-stepOne-h2">
+              Profită de <br />
+              bonus
+            </h2>
+            <p class="steps-section-stepOne-p step-padding-extra">
+              Joacă și câștigă!
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="criteria-section">
-      <div class="criteria-section-card">
-        <h2 class="criteria-section-card-h2">Legalitatea cazinourilor</h2>
-        <p class="criteria-section-card-p">
-          Licența ONJN este o cerință obligatorie. Siguranța banilor tăi e
-          prioritară, iar noi garantăm că totul e în regulă.
-        </p>
-        <img src="" alt="" class="criteria-section-card-img" />
+      <p class="criteria-section-h1">
+        Criteriile după care alegem cele mai bune bonusuri de casino
+      </p>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="criteria-section-card sw1">
+              <h2 class="criteria-section-card-h2">Legalitatea cazinourilor</h2>
+              <p class="criteria-section-card-p">
+                Licența ONJN este o cerință obligatorie. Siguranța banilor tăi e
+                prioritară, iar noi garantăm că totul e în regulă.
+              </p>
+              <img
+                src="./assets/icons/icon-casino-license.png"
+                alt=""
+                class="criteria-section-card-img"
+                width="120px"
+                height="109px"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="criteria-section-card sw2">
+              <h2 class="criteria-section-card-h2">
+                Accesibilitatea bonusurilor
+              </h2>
+              <p class="criteria-section-card-p">
+                Timpul alocat pentru îndeplinirea bonusurilor și cerințele de
+                rulaj cântăresc foarte mult. Luăm în considerare doar ofertele
+                accesibile. Ne dorim ca toți jucătorii care trec pe la noi să
+                fie mulțumiți.
+              </p>
+              <img
+                src="./assets/icons/icon-key.png"
+                alt=""
+                class="criteria-section-card-img"
+                width="80px"
+                height="100px"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="criteria-section-card sw3">
+              <h2 class="criteria-section-card-h2">Valoarea bonusurilor</h2>
+              <p class="criteria-section-card-p">
+                Cu toții vânăm cele mai mari bonusuri, dar calitatea primează în
+                fața cantității. Avem grijă de utlizatorii noștri și le oferim
+                doar bonusurile care contează.
+              </p>
+              <img
+                src="./assets/icons/icon-bonus-value.png"
+                alt=""
+                class="criteria-section-card-img"
+                width="120px"
+                height="120px"
+              />
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="criteria-section-card">
-        <h2 class="criteria-section-card-h2">Accesibilitatea bonusurilor</h2>
-        <p class="criteria-section-card-p">
-          Timpul alocat pentru îndeplinirea bonusurilor și cerințele de rulaj
-          cântăresc foarte mult. Luăm în considerare doar ofertele accesibile.
-          Ne dorim ca toți jucătorii care trec pe la noi să fie mulțumiți.
-        </p>
-        <img src="" alt="" class="criteria-section-card-img" />
-      </div>
-      <div class="criteria-section-card">
-        <h2 class="criteria-section-card-h2">Valoarea bonusurilor</h2>
-        <p class="criteria-section-card-p">
-          Cu toții vânăm cele mai mari bonusuri, dar calitatea primează în fața
-          cantității. Avem grijă de utlizatorii noștri și le oferim doar
-          bonusurile care contează.
-        </p>
-        <img src="" alt="" class="criteria-section-card-img" />
+      <div class="section-criteria-cards">
+        <div class="criteria-section-card">
+          <h2 class="criteria-section-card-h2">Legalitatea cazinourilor</h2>
+          <p class="criteria-section-card-p">
+            Licența ONJN este o cerință obligatorie. Siguranța banilor tăi e
+            prioritară, iar noi garantăm că totul e în regulă.
+          </p>
+          <img
+            src="./assets/icons/icon-casino-license.png"
+            alt=""
+            class="criteria-section-card-img"
+            width="120px"
+            height="109px"
+          />
+        </div>
+        <div class="criteria-section-card">
+          <h2 class="criteria-section-card-h2">Accesibilitatea bonusurilor</h2>
+          <p class="criteria-section-card-p">
+            Timpul alocat pentru îndeplinirea bonusurilor și cerințele de rulaj
+            cântăresc foarte mult. Luăm în considerare doar ofertele accesibile.
+            Ne dorim ca toți jucătorii care trec pe la noi să fie mulțumiți.
+          </p>
+          <img
+            src="./assets/icons/icon-key.png"
+            alt=""
+            class="criteria-section-card-img"
+            width="80px"
+            height="100px"
+          />
+        </div>
+        <div class="criteria-section-card bg3">
+          <h2 class="criteria-section-card-h2">Valoarea bonusurilor</h2>
+          <p class="criteria-section-card-p">
+            Cu toții vânăm cele mai mari bonusuri, dar calitatea primează în
+            fața cantității. Avem grijă de utlizatorii noștri și le oferim doar
+            bonusurile care contează.
+          </p>
+          <img
+            src="./assets/icons/icon-bonus-value.png"
+            alt=""
+            class="criteria-section-card-img"
+            width="120px"
+            height="120px"
+          />
+        </div>
       </div>
     </section>
 
@@ -3483,59 +3685,129 @@
         citește mai jos.
       </p>
       <div class="about-us-experiences">
-        <div class="about-us-experience">
-          <img src="about-us-experience-img" alt="" class="" />
+        <div class="about-us-experience exp-h1">
+          <img
+            src="./assets/icons/about-us-icon-1.svg"
+            alt=""
+            class="about-us-experience-img"
+          />
           <p class="about-us-experience-p">
             <span class="about-us-experience-span">15+</span>
             ani de experiență
           </p>
         </div>
         <div class="about-us-experience">
-          <img src="about-us-experience-img" alt="" class="" />
+          <img
+            src="./assets/icons/about-us-icon-2.svg"
+            alt=""
+            class="about-us-experience-img"
+          />
           <p class="about-us-experience-p">
             <span class="about-us-experience-span">20+</span>
             proiecte de gambling de succes
           </p>
         </div>
         <div class="about-us-experience">
-          <img src="about-us-experience-img" alt="" class="" />
+          <img
+            src="./assets/icons/about-us-icon-3.svg"
+            alt=""
+            class="about-us-experience-img"
+          />
           <p class="about-us-experience-p">
             Total bonusuri de cazino oferite (RON):
             <span class="about-us-experience-span"> 75940</span>
           </p>
         </div>
-        <div class="about-us-experience">
-          <img src="about-us-experience-img" alt="" class="" />
+        <div class="about-us-experience exp-h1">
+          <img
+            src="./assets/icons/about-us-icon-4.svg"
+            alt=""
+            class="about-us-experience-img"
+          />
           <p class="about-us-experience-p">
             Total rotiri gratuite oferite:
             <span class="about-us-experience-span"> 23930</span>
           </p>
         </div>
       </div>
+      <div class="swiper about-swipper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="about-us-section-card">
+              <h2 class="about-us-section-card-h2">Tot timpul la curent</h2>
+              <p class="about-us-section-card-p">
+                Am selectat cele mai bune bonusuri și suntem cu ochii pe
+                cazinouri pentru a actualiza zilnic informațiile de pe site.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="about-us-section-card">
+              <h2 class="about-us-section-card-h2">Evaluăm obiectiv</h2>
+              <p class="about-us-section-card-p">
+                Luăm în considerare zeci de factori pentru a formula cele mai
+                bune decizii.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="about-us-section-card">
+              <h2 class="about-us-section-card-h2">Calculăm minuțios</h2>
+              <p class="about-us-section-card-p">
+                Analizăm cazinourile până la cel mai mic amănunt pe baza
+                algoritmilor speciali pentru rezultate precise.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="about-us-section-card">
+              <h2 class="about-us-section-card-h2">Încredere și siguranță</h2>
+              <p class="about-us-section-card-p">
+                Garantăm legalitatea și transparența fiecărui cazinou listat pe
+                site-ul nostru. Siguranța și încrederea sunt prioritare.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="about-us-section-card">
+              <h2 class="about-us-section-card-h2">Votul tău contează</h2>
+              <p class="about-us-section-card-p">
+                Am primit mii de voturi din partea utilizatorilor pentru a
+                decide ierarhia cazinourilor pe site.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
       <div class="about-us-section-cards">
         <div class="about-us-section-card">
           <h2 class="about-us-section-card-h2">Tot timpul la curent</h2>
           <p class="about-us-section-card-p">
-            Pe lângă faptul că am selectat cele mai bune cazinouri și bonusuri,
-            suntem mereu pe fir cu ultimele noutăți și schimbări în domeniu.
-            Suntem constant cu ochii pe operatorii de cazinouri și actualizăm
-            zilnic informațiile de pe site.
+            Am selectat cele mai bune bonusuri și suntem cu ochii pe cazinouri
+            pentru a actualiza zilnic informațiile de pe site.
           </p>
         </div>
         <div class="about-us-section-card">
           <h2 class="about-us-section-card-h2">Evaluăm obiectiv</h2>
           <p class="about-us-section-card-p">
-            Avem o echipă solidă în spate care analizează până la cel mai mic
-            amănunt fiecare cazinou. Veridicitatea informațiilor este în
-            favoarea noastră, dar, și mai important, în favoarea ta.
+            Luăm în considerare zeci de factori pentru a formula cele mai bune
+            decizii.
           </p>
         </div>
         <div class="about-us-section-card">
           <h2 class="about-us-section-card-h2">Calculăm minuțios</h2>
           <p class="about-us-section-card-p">
-            Aprecierea serioasă și responsabilă a unui cazinou nu se face cu
-            prietenii la o bere. Deciziile se iau pe baza datelor și
-            algoritmilor speciali, de care ne folosim în mod activ.
+            Analizăm cazinourile până la cel mai mic amănunt pe baza
+            algoritmilor speciali pentru rezultate precise.
           </p>
         </div>
         <div class="about-us-section-card">
@@ -3548,13 +3820,16 @@
         <div class="about-us-section-card">
           <h2 class="about-us-section-card-h2">Votul tău contează</h2>
           <p class="about-us-section-card-p">
-            Într-un final, veridicitatea și încrederea vin de la tine și de la
-            alți împătimiți ai jocurilor de noroc. Miile de recenzii, pe care
-            le-am primit de-a lungul timpului, adaugă greutate argumentelor.
+            Am primit mii de voturi din partea utilizatorilor pentru a decide
+            ierarhia cazinourilor pe site.
           </p>
         </div>
       </div>
-      <img class="about-us-section-img" src="" alt="" />
+      <img
+        class="about-us-section-img"
+        src="./assets/images/lucky-coins-image.webp"
+        alt=""
+      />
     </section>
 
     <section class="testimonials-section">
@@ -3724,7 +3999,7 @@
         </div>
       </div>
     </section>
-
+    <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
     <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
   </body>
