@@ -7,55 +7,6 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
-//testimonial-slider
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-
-//accordio
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-
 //css progressbar
 
 $(function () {
@@ -328,3 +279,87 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+//accordio
+
+var acc = document.getElementsByClassName("accordio-div1");
+var arrowAcordio = document.getElementById("arrow-accordio");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      arrowAcordio.style.transform = "rotate(0deg)";
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      arrowAcordio.style.transform = "rotate(45deg)";
+    }
+  });
+}
+
+//accordio2
+
+var acc2 = document.getElementsByClassName("accordio-div2");
+var arrowAcordio2 = document.getElementById("arrow-accordio2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc2[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      arrowAcordio2.style.transform = "rotate(0deg)";
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      arrowAcordio2.style.transform = "rotate(45deg)";
+    }
+  });
+}
+
+// accordio3;
+
+var acc3 = document.getElementsByClassName("accordio-div3");
+var arrowAcordio3 = document.getElementById("arrow-accordio3");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc3[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      arrowAcordio3.style.transform = "rotate(0deg)";
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      arrowAcordio3.style.transform = "rotate(45deg)";
+    }
+  });
+}
+
+// accordio4;
+
+var acc4 = document.getElementsByClassName("accordio-div4");
+var arrowAcordio4 = document.getElementById("arrow-accordio4");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc4[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      arrowAcordio4.style.transform = "rotate(0deg)";
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      arrowAcordio4.style.transform = "rotate(45deg)";
+    }
+  });
+}
