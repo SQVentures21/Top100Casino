@@ -260,6 +260,22 @@ btn12.onclick = function () {
   }
 };
 
+
+//last modal
+
+const targetDiv13 = document.getElementById("myDiv13");
+const btn13 = document.getElementById("arrow-13");
+btn13.onclick = function () {
+  if (targetDiv13.style.display === "none") {
+    targetDiv13.style.display = "block";
+    btn13.style.transform = "rotate(180deg)";
+  } else {
+    targetDiv13.style.display = "none";
+    btn13.style.transform = "rotate(360deg)";
+  }
+};
+
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
 
