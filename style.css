@@ -1090,6 +1090,7 @@ criteria section */
 
 .faq-section {
   width: 100%;
+  position: relative;
   background-image: url("./assets/images/card-background.jpg");
 }
 
@@ -1221,7 +1222,7 @@ criteria section */
 }
 
 .faq-section-first-2 {
-  margin-top: 220px;
+  margin-top: 250px;
   position: relative;
   background-image: url("./assets/mobile/newletter-background_mobile.webp");
   width: 80%;
@@ -1269,6 +1270,313 @@ criteria section */
   color: white;
 }
 
+.form-div
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:6px;
+  margin-top: 16px;
+}
+
+.form-div input{
+height: 40px;
+width: 272px;
+border-radius: 8px;
+padding: 9px 16px 9px 16px;
+border: none;
+
+}
+
+
+.form-div button 
+{
+height: 40px;
+width: 272px;
+border-radius: 8px;
+padding: 9.5px 56px 9.5px 56px;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+background-color:#36BC6E ;
+border: none;
+
+}
+
+.bottom-text-newsletter
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-inline:auto;
+  padding-top: 36px;
+}
+
+.bottom-text-newsletter-p
+{
+ 
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+
+.bottom-newsletter-span
+{
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+
+.faq-section-first-text-title
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-inline: auto;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+padding:64px 0 16px 0;
+
+}
+
+.month-casino
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-inline:auto;
+}
+
+
+.month-casino-text
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-inline:auto;
+  flex-direction: column;
+
+}
+
+.month-casino-title
+
+{
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 36px;
+margin-bottom: 16px;
+
+}
+.month-casino-p ,
+.month-casino-p2 ,
+.month-casino-p3
+{
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.month-casino-p ,
+.month-casino-p2
+{
+margin-bottom: 20px;
+
+}
+
+.month-casino-benefits
+{
+  display: flex;
+  width: 80%;
+  margin-inline:auto;
+  flex-direction: column;
+  padding-bottom: 65px;
+}
+
+.month-casino-title
+{
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.month-casino-benefits-card
+{
+  display: flex;
+  gap:6px;
+ margin-bottom:16px;
+}
+
+.bottom-benefits-img
+{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+
+/* footer  */
+
+footer
+{
+  width: 100%;
+  background: #253B37;
+  color:white;
+}
+
+.footer-wrapper
+{
+  width:80%;
+  margin-inline: auto;
+}
+
+.map{
+border-radius: 16px;
+padding-top:24px;
+display:flex;
+justify-content: center;
+
+}
+
+.footer-contact
+{
+  padding-top: 28px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 52px;
+}
+
+.footer-info
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-info-title
+{
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0.15em;
+text-align: center;
+padding-bottom: 16px;
+}
+
+.despre-noi ,
+.contact ,
+.anpc
+{
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 16px;
+  cursor: pointer;
+  
+}
+
+.footer-main-text
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 48px;
+  gap:16px;
+  padding-bottom: 48px;
+}
+
+.footer-text-legalized
+{
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.footer-images-legalized
+{
+  display: flex;
+  gap:6px;
+}
+
+.footer-copyright
+{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.footer-copyright-p
+{
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+color: hsla(0, 0%, 100%, 0.6);
+}
+
+.arrow-up
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+
+
+.goUpp
+{
+  width:56px;
+  height: 56px;
+  background: #6AC687;
+  padding:16px;
+border-radius: 10px;
+}
 /* navbar mobile mediaquery */
 
 @media (max-width: 760px) {
