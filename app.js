@@ -1,12 +1,3 @@
-//navbar
-
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
-toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-});
-
 //css progressbar
 
 $(function () {
@@ -260,7 +251,6 @@ btn12.onclick = function () {
   }
 };
 
-
 //last modal
 
 const targetDiv13 = document.getElementById("myDiv13");
@@ -274,7 +264,6 @@ btn13.onclick = function () {
     btn13.style.transform = "rotate(360deg)";
   }
 };
-
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -300,6 +289,7 @@ const swiper = new Swiper(".swiper", {
 
 var acc = document.getElementsByClassName("accordio-div1");
 var arrowAcordio = document.getElementById("arrow-accordio");
+
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -313,6 +303,7 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       arrowAcordio.style.transform = "rotate(45deg)";
+      acc.style.border = "thick solid #0000FF";
     }
   });
 }
@@ -379,3 +370,85 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//scroll to top
+
+$("a[href='#top']").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+//get postion of div
+
+function getOffset(el) {
+  var _x = 0;
+  var _y = 0;
+  while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+    _x += el.offsetLeft - el.scrollLeft;
+    _y += el.offsetTop - el.scrollTop;
+    el = el.offsetParent;
+  }
+  return { top: _y, left: _x };
+}
+var x = getOffset(document.querySelector(".wrap-modal-arrow-12")).left;
+var y = getOffset(document.querySelector(".wrap-modal-arrow-12")).top;
+console.log("x: " + x);
+console.log("y: " + y);
+
+//show position fixed casino
+
+$(document).scroll(function () {
+  var scroll = $(this).scrollTop();
+  if (scroll > y - 150) {
+    $(".casino-fixed").fadeIn();
+  } else {
+    $(".casino-fixed").fadeOut();
+  }
+});
+
+// Get the modal despre noi
+var modalDespreNoi = document.getElementById("myModalDespreNoi");
+
+// Get the button that opens the modal
+var btnDespreNoi = document.getElementById("myBtnDespreNoi");
+
+// Get the <span> element that closes the modal
+var closeButtonDespreNoi = document.querySelector(".close1");
+
+// When the user clicks the button, open the modal
+btnDespreNoi.onclick = function () {
+  modalDespreNoi.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+closeButtonDespreNoi.onclick = function () {
+  modalDespreNoi.style.display = "none";
+};
+
+// // Get the modal contact
+var modalContact = document.getElementById("myModalContact");
+
+// Get the button that opens the modal
+var btnContact = document.getElementById("myBtnContact");
+
+// Get the <span> element that closes the modal
+var closeButtonContact = document.querySelector(".close2");
+
+// When the user clicks the button, open the modal
+btnContact.onclick = function () {
+  modalContact.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+closeButtonContact.onclick = function () {
+  modalContact.style.display = "none";
+};
+
+//hide fixed casino
+
+const buttonHideCasino = document.querySelector(".close-fixed-casino");
+const casinoFixedBottom = document.querySelector(".casino-fixed");
+
+buttonHideCasino.addEventListener("click", () => {
+  $(".casino-fixed").fadeOut();
+});
