@@ -20,20 +20,23 @@
     <section class="first-section">
       <div class="container-width80">
         <nav class="navbar">
-          <div class="logos">
-            <img class="nav-logo" src="assets/images/logo.png" alt="" />
-          </div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li class="about">Despre noi</li>
-              <li class="contact">Contact</li>
+          <header class="header">
+            <a href="" class="logo"
+              ><img
+                src="./assets/tablet/logo (1).webp"
+                alt=""
+                class="logo"
+                width="200px"
+            /></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"
+              ><span class="navicon"></span
+            ></label>
+            <ul class="menu">
+              <li><a id="myBtnDespreNoi">Despre Noi</a></li>
+              <li><a id="myBtnContact">Contact</a></li>
             </ul>
-          </div>
+          </header>
         </nav>
 
         <div class="banner-text">
@@ -82,6 +85,14 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="desktop-img">
+        <img src="./assets/images/rooster.webp" alt="" class="roaster-desk"
+        width="382px">
+      </div>
+      <div class="desktop-tablet">
+        <img src="./assets/tablet/tablet-banner_rooster.webp" alt="" class="roaster-desk"
+        width="382px">
       </div>
     </section>
 
@@ -200,7 +211,7 @@
               </div>
             </div>
             <div class="button-section">
-              <a href="">
+             
                 <button class="activeaza-button">Activează Bonusul</button>
               </a>
             </div>
@@ -3078,7 +3089,7 @@
           </div>
         </div>
 
-        <!-- card12 -->
+        <!-- card12  add special class to show casino at bottom of page-->
         <div class="wrap-modal-arrow-12">
           <div class="card">
             <div class="card-section-Ranking">
@@ -3368,7 +3379,7 @@
       <div class="bonus-title">
         Important de stiut despre bonusurile de cazino
       </div>
-      <div class="swiper">
+      <div class="swiper bonus-swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -3563,7 +3574,7 @@
       <p class="criteria-section-h1">
         Criteriile după care alegem cele mai bune bonusuri de casino
       </p>
-      <div class="swiper">
+      <div class="swiper swiper-criteria">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -4056,380 +4067,607 @@
           </h1>
           <p class="faq-section-first-text-p">
             Ca să ți-l putem da, avem nevoie de adresa ta de email!
-
           </p>
-          
+
           <form action="#">
             <label for="emails" aria-placeholder="Enter email addresses:">
               <div class="form-div">
-              <input type="email" id="emails" name="emails" placeholder="E-mail" />
-            <a href="#"> <button onclick="document.querySelector('#emails').click()">
-                Aboneaza-te acum!
-              </button> </a> 
-            </div>
+                <input
+                  type="email"
+                  id="emails"
+                  name="emails"
+                  placeholder="E-mail"
+                />
+                <a href="#">
+                  <button onclick="document.querySelector('#emails').click()">
+                    Aboneaza-te acum!
+                  </button>
+                </a>
+              </div>
             </label>
           </form>
         </div>
-            <div class="bottom-text-newsletter">
-              <p class="bottom-text-newsletter-p">* Locuri limitate: <span class="bottom-newsletter-span"> au mai rămas doar 13 locuri disponibile </span>
-              </p>
-            </div>
+        <div class="bottom-text-newsletter">
+          <p class="bottom-text-newsletter-p">
+            * Locuri limitate:
+            <span class="bottom-newsletter-span">
+              au mai rămas doar 13 locuri disponibile
+            </span>
+          </p>
+        </div>
       </div>
 
       <h1 class="faq-section-first-text-title">
         Joaca la cazinoul lunii Februarie
       </h1>
-  <div class="month-casino">
-      <div class="wrap-modal-arrow-1">
-        <div class="card">
-          <div class="card-section-Ranking">
-            <p class="card-section-Ranking-p">Oferta Exclusiva</p>
-            <div class="card-section-ranking-columns3">
-              <div class="ranking-nr1">
-                <img
-                  src="./assets/icons/number-1.svg"
-                  alt=""
-                  width="40px"
-                  height="40px"
-                />
-                <p>1</p>
-              </div>
+      <div class="month-casino">
+        <div class="wrap-modal-arrow-1">
+          <div class="card">
+            <div class="card-section-Ranking">
+              <p class="card-section-Ranking-p">Oferta Exclusiva</p>
+              <div class="card-section-ranking-columns3">
+                <div class="ranking-nr1">
+                  <img
+                    src="./assets/icons/number-1.svg"
+                    alt=""
+                    width="40px"
+                    height="40px"
+                  />
+                  <p>1</p>
+                </div>
 
-              <div class="ranking-nr2">
-                <img
-                  src="./assets/tabel/casino logos/casino-logo_mr-bit.png"
-                  alt=""
-                />
-                <p>L1213854VW001295</p>
-              </div>
+                <div class="ranking-nr2">
+                  <img
+                    src="./assets/tabel/casino logos/casino-logo_mr-bit.png"
+                    alt=""
+                  />
+                  <p>L1213854VW001295</p>
+                </div>
 
-              <div class="ranking-nr3">
-                <svg
-                  class="radial-progress"
-                  data-percentage="97"
-                  viewBox="0 0 80 80"
-                >
-                  <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-
-                  <circle
-                    class="complete"
-                    cx="40"
-                    cy="40"
-                    r="35"
-                    style="stroke-dashoffset: 39.58406743523136"
-                  ></circle>
-
-                  <text
-                    class="percentage"
-                    x="51%"
-                    y="55%"
-                    transform="matrix(0, 1, -1, 0, 80, 0)"
+                <div class="ranking-nr3">
+                  <svg
+                    class="radial-progress"
+                    data-percentage="97"
+                    viewBox="0 0 80 80"
                   >
-                    9.98
-                  </text>
-                </svg>
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+
+                    <circle
+                      class="complete"
+                      cx="40"
+                      cy="40"
+                      r="35"
+                      style="stroke-dashoffset: 39.58406743523136"
+                    ></circle>
+
+                    <text
+                      class="percentage"
+                      x="51%"
+                      y="55%"
+                      transform="matrix(0, 1, -1, 0, 80, 0)"
+                    >
+                      9.98
+                    </text>
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card-section-Bonus">
-            <p>
-              150% <span class="card-section-Bonus-span">până la </span>2000
-              RON +<br />
-              70 <span class="card-section-Bonus-span">Rotiri Gratuite</span>
-            </p>
-          </div>
-          <div class="card-section-Evaluare">
-            <p class="card-section-Evaluare-p1">Evaluari(2642)</p>
-            <div class="card-section-Evaluare-stars">
-              <div class="rating">
-                <input
-                  type="radio"
-                  id="star5"
-                  name="rating"
-                  value="5"
-                  class="btn one"
-                /><label for="star5" class="btn one"></label>
-                <input
-                  type="radio"
-                  id="star4"
-                  name="rating"
-                  value="4"
-                /><label for="star4" class="btn two"></label>
-                <input
-                  type="radio"
-                  id="star3"
-                  name="rating"
-                  value="3"
-                /><label for="star3" class="btn three"></label>
-                <input
-                  type="radio"
-                  id="star2"
-                  name="rating"
-                  value="2"
-                /><label for="star2" class="btn four"></label>
-                <input
-                  type="radio"
-                  id="star1"
-                  name="rating"
-                  value="1"
-                /><label for="star1" class="btn five"></label>
-              </div>
-              <p class="evaluare-text">Lasă o notă!</p>
-            </div>
-          </div>
-          <div class="button-section">
-            <a href="">
-              <button class="activeaza-button">Activează Bonusul</button>
-            </a>
-          </div>
-
-          <div class="cardOne-bottom">
-            <p class="cardOne-bottom-p">
-              Ofertă exclusivă via Top100Casino. 20 rotiri extra la 'Big Bad
-              Wolf'. <br />
-              Depunere minimă: 20 RON.
-            </p>
-          </div>
-
-          <div class="arrow-section">
-            <img
-              id="arrow-13"
-              class="arrow-modal"
-              src="./assets/icons/table_chevron-down.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="card-Arrow" id="myDiv13" style="display: none">
-          <div class="arrow-wrapper">
-            <div class="card-Arrow-section-1">
-              <p class="card-Arrow-section-1-p">Depuneri si Retrageri:</p>
-              <div class="card-Arrow-section-1-images">
-                <img
-                  class="card-Arrow-section-1-image"
-                  src="./assets/tabel/payment logos/logo-visa.png"
-                  alt=""
-                  width="46px"
-                  height="24px"
-                />
-                <img
-                  class="card-Arrow-section-1-image"
-                  src="./assets/tabel/payment logos/logo-mastercard.png"
-                  alt=""
-                  width="33px"
-                  height="24px"
-                />
-                <img
-                  class="card-Arrow-section-1-image"
-                  src="./assets/tabel/payment logos/logo-skrill.png"
-                  alt=""
-                  width="48px"
-                  height="24px"
-                />
-                <img
-                  class="card-Arrow-section-1-image"
-                  src="./assets/tabel/payment logos/logo-paysafecard.png"
-                  alt=""
-                  width="105px"
-                  height="24px"
-                />
-              </div>
-            </div>
-
-            <div class="card-Arrow-section-2">
-              <p class="card-Arrow-section-2-p1">Timp de retragere:</p>
-              <h3 class="card-Arrow-section-2-h3">
-                <p class="card-Arrow-section-2-p2">
-                  Card : <span class="card-Arrow-section-2-span">3 zile</span>
-                </p>
-                <p class="card-Arrow-section-2-p2">
-                  E Wallets :
-                  <span class="card-Arrow-section-2-span">1 zi</span>
-                </p>
-                <p class="card-Arrow-section-2-p2">
-                  Transfer Bancar:
-                  <span class="card-Arrow-section-2-span">3 zile</span>
-                </p>
-              </h3>
-            </div>
-
-            <div class="card-Arrow-section-3">
-              <p class="card-Arrow-section-3-p">Compatibilitate pe mobil</p>
-              <div class="card-Arrow-section-3-images">
-                <img
-                  class="card-Arrow-section-3-image"
-                  src="./assets/icons/iOs.png"
-                  alt=""
-                  width="32px"
-                  height="32px"
-                />
-                <img
-                  class="card-Arrow-section-3-image"
-                  src="./assets/icons/android.png"
-                  alt=""
-                  width="32px"
-                  height="32px"
-                />
-              </div>
-            </div>
-
-            <div class="card-Arrow-section-4">
-              <p class="card-Arrow-section-4-p1">
-                Ce ne mai place la Mr.Bit:
+            <div class="card-section-Bonus">
+              <p>
+                150% <span class="card-section-Bonus-span">până la </span>2000
+                RON +<br />
+                70 <span class="card-section-Bonus-span">Rotiri Gratuite</span>
               </p>
-              <div class="card-arrow-status">
-                <div class="card-arrow-status1">
-                  <img src="./assets/icons/checkmark.svg" alt="" />
-                  <p class="card-Arrow-section-3-p2">
-                    Sistem de statusuri cu puncte speciale Frank (FR)
-                  </p>
+            </div>
+            <div class="card-section-Evaluare">
+              <p class="card-section-Evaluare-p1">Evaluari(2642)</p>
+              <div class="card-section-Evaluare-stars">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    id="star5"
+                    name="rating"
+                    value="5"
+                    class="btn one"
+                  /><label for="star5" class="btn one"></label>
+                  <input
+                    type="radio"
+                    id="star4"
+                    name="rating"
+                    value="4"
+                  /><label for="star4" class="btn two"></label>
+                  <input
+                    type="radio"
+                    id="star3"
+                    name="rating"
+                    value="3"
+                  /><label for="star3" class="btn three"></label>
+                  <input
+                    type="radio"
+                    id="star2"
+                    name="rating"
+                    value="2"
+                  /><label for="star2" class="btn four"></label>
+                  <input
+                    type="radio"
+                    id="star1"
+                    name="rating"
+                    value="1"
+                  /><label for="star1" class="btn five"></label>
                 </div>
-                <div class="card-arrow-status1">
-                  <img src="./assets/icons/checkmark.svg" alt="" />
-                  <p class="card-Arrow-section-3-p2">
-                    40 de furnizori de top
-                  </p>
-                </div>
-                <div class="card-arrow-status1">
-                  <img src="./assets/icons/checkmark.svg" alt="" />
-                  <p class="card-Arrow-section-3-p2">
-                    Turnee săptămânale cu premii de zeci de mii de RON
-                  </p>
-                </div>
-                <div class="card-arrow-status1">
-                  <img src="./assets/icons/checkmark.svg" alt="" />
-                  <p class="card-Arrow-section-3-p2">
-                    Zeci de rotiri gratuite în fiecare zi de weekend
-                  </p>
-                </div>
+                <p class="evaluare-text">Lasă o notă!</p>
               </div>
             </div>
+            <div class="button-section">
+              <a href="">
+                <button class="activeaza-button">Activează Bonusul</button>
+              </a>
+            </div>
 
-            <div class="card-Arrow-section-5">
-              <p class="card-Arrow-section-5-p">Cum arata cazino-ul:</p>
-              <div class="card-Arrow-section-5-images" src="" alt="">
-                <a
-                  href="./assets/tabel/casino screenshots/webp/1_mr-bit-1.webp"
-                  data-lightbox="roadtrip"
-                  ><img
-                    src="./assets/tabel/casino screenshots/webp/1_mr-bit-1.webp"
-                    alt="image"
-                    width="132px"
-                    height="73px"
-                /></a>
-                <a
-                  href="./assets/tabel/casino screenshots/webp/1_mr-bit-2.webp"
-                  data-lightbox="roadtrip"
-                >
+            <div class="cardOne-bottom">
+              <p class="cardOne-bottom-p">
+                Ofertă exclusivă via Top100Casino. 20 rotiri extra la 'Big Bad
+                Wolf'. <br />
+                Depunere minimă: 20 RON.
+              </p>
+            </div>
+
+            <div class="arrow-section">
+              <img
+                id="arrow-13"
+                class="arrow-modal"
+                src="./assets/icons/table_chevron-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="card-Arrow" id="myDiv13" style="display: none">
+            <div class="arrow-wrapper">
+              <div class="card-Arrow-section-1">
+                <p class="card-Arrow-section-1-p">Depuneri si Retrageri:</p>
+                <div class="card-Arrow-section-1-images">
                   <img
-                    src="./assets/tabel/casino screenshots/webp/1_mr-bit-2.webp"
-                    alt="image"
-                    width="132px"
-                    height="73px"
-                /></a>
-                <a
-                  href="./assets/tabel/casino screenshots/webp/1_mr-bit-3.webp"
-                  data-lightbox="roadtrip"
-                >
-                  <img
-                    src="./assets/tabel/casino screenshots/webp/1_mr-bit-3.webp"
-                    alt="image"
-                    width="132px"
-                    height="73px"
+                    class="card-Arrow-section-1-image"
+                    src="./assets/tabel/payment logos/logo-visa.png"
+                    alt=""
+                    width="46px"
+                    height="24px"
                   />
-                </a>
-                <a
-                  href="./assets/tabel/casino screenshots/webp/1_mr-bit-4.webp"
-                  data-lightbox="roadtrip"
-                >
                   <img
-                    src="./assets/tabel/casino screenshots/webp/1_mr-bit-4.webp"
-                    alt="image"
-                    width="132px"
-                    height="73px"
+                    class="card-Arrow-section-1-image"
+                    src="./assets/tabel/payment logos/logo-mastercard.png"
+                    alt=""
+                    width="33px"
+                    height="24px"
                   />
-                </a>
+                  <img
+                    class="card-Arrow-section-1-image"
+                    src="./assets/tabel/payment logos/logo-skrill.png"
+                    alt=""
+                    width="48px"
+                    height="24px"
+                  />
+                  <img
+                    class="card-Arrow-section-1-image"
+                    src="./assets/tabel/payment logos/logo-paysafecard.png"
+                    alt=""
+                    width="105px"
+                    height="24px"
+                  />
+                </div>
+              </div>
+
+              <div class="card-Arrow-section-2">
+                <p class="card-Arrow-section-2-p1">Timp de retragere:</p>
+                <h3 class="card-Arrow-section-2-h3">
+                  <p class="card-Arrow-section-2-p2">
+                    Card : <span class="card-Arrow-section-2-span">3 zile</span>
+                  </p>
+                  <p class="card-Arrow-section-2-p2">
+                    E Wallets :
+                    <span class="card-Arrow-section-2-span">1 zi</span>
+                  </p>
+                  <p class="card-Arrow-section-2-p2">
+                    Transfer Bancar:
+                    <span class="card-Arrow-section-2-span">3 zile</span>
+                  </p>
+                </h3>
+              </div>
+
+              <div class="card-Arrow-section-3">
+                <p class="card-Arrow-section-3-p">Compatibilitate pe mobil</p>
+                <div class="card-Arrow-section-3-images">
+                  <img
+                    class="card-Arrow-section-3-image"
+                    src="./assets/icons/iOs.png"
+                    alt=""
+                    width="32px"
+                    height="32px"
+                  />
+                  <img
+                    class="card-Arrow-section-3-image"
+                    src="./assets/icons/android.png"
+                    alt=""
+                    width="32px"
+                    height="32px"
+                  />
+                </div>
+              </div>
+
+              <div class="card-Arrow-section-4">
+                <p class="card-Arrow-section-4-p1">
+                  Ce ne mai place la Mr.Bit:
+                </p>
+                <div class="card-arrow-status">
+                  <div class="card-arrow-status1">
+                    <img src="./assets/icons/checkmark.svg" alt="" />
+                    <p class="card-Arrow-section-3-p2">
+                      Sistem de statusuri cu puncte speciale Frank (FR)
+                    </p>
+                  </div>
+                  <div class="card-arrow-status1">
+                    <img src="./assets/icons/checkmark.svg" alt="" />
+                    <p class="card-Arrow-section-3-p2">
+                      40 de furnizori de top
+                    </p>
+                  </div>
+                  <div class="card-arrow-status1">
+                    <img src="./assets/icons/checkmark.svg" alt="" />
+                    <p class="card-Arrow-section-3-p2">
+                      Turnee săptămânale cu premii de zeci de mii de RON
+                    </p>
+                  </div>
+                  <div class="card-arrow-status1">
+                    <img src="./assets/icons/checkmark.svg" alt="" />
+                    <p class="card-Arrow-section-3-p2">
+                      Zeci de rotiri gratuite în fiecare zi de weekend
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-Arrow-section-5">
+                <p class="card-Arrow-section-5-p">Cum arata cazino-ul:</p>
+                <div class="card-Arrow-section-5-images" src="" alt="">
+                  <a
+                    href="./assets/tabel/casino screenshots/webp/1_mr-bit-1.webp"
+                    data-lightbox="roadtrip"
+                    ><img
+                      src="./assets/tabel/casino screenshots/webp/1_mr-bit-1.webp"
+                      alt="image"
+                      width="132px"
+                      height="73px"
+                  /></a>
+                  <a
+                    href="./assets/tabel/casino screenshots/webp/1_mr-bit-2.webp"
+                    data-lightbox="roadtrip"
+                  >
+                    <img
+                      src="./assets/tabel/casino screenshots/webp/1_mr-bit-2.webp"
+                      alt="image"
+                      width="132px"
+                      height="73px"
+                  /></a>
+                  <a
+                    href="./assets/tabel/casino screenshots/webp/1_mr-bit-3.webp"
+                    data-lightbox="roadtrip"
+                  >
+                    <img
+                      src="./assets/tabel/casino screenshots/webp/1_mr-bit-3.webp"
+                      alt="image"
+                      width="132px"
+                      height="73px"
+                    />
+                  </a>
+                  <a
+                    href="./assets/tabel/casino screenshots/webp/1_mr-bit-4.webp"
+                    data-lightbox="roadtrip"
+                  >
+                    <img
+                      src="./assets/tabel/casino screenshots/webp/1_mr-bit-4.webp"
+                      alt="image"
+                      width="132px"
+                      height="73px"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="month-casino-text">
-      <h1 class="month-casino-title">De ce este Mr. Bit alegerea noastră?
-      </h1>
-      <p class="month-casino-p">Motivele sunt numeroase și bine întemeiate. Votul nostru și votul utilizatorilor contează în egală măsură. Literalmente. Situația stă în felul următor:</p>
-       
-      <p class="month-casino-p2">Filtrăm cazinoul prin toate criteriile noastre: siguranță, bonusuri, cerințe de rulaj, oferta de jocuri, metode de plată, taxele la depunere și retragere, RTP, asistență pentru clienți, navigabilitate pe mobil și interfață. Acordăm câte o notă de la 1 la 10 pentru fiecare dintre aceste criterii, apoi facem media aritmetică pentru a obține nota noastra finală. 
-      </p>
-      <p class="month-casino-p3">În cele din urmă, facem media între nota noastră și voturile utilizatorilor. După cum spuneam, opinia voastră contează la fel de mult ca și a noastră. Rezultatul acestui ultim calcul reflectă poziția în clasament a cazinoului.</p>
-    </div>
+      <div class="month-casino-text">
+        <h1 class="month-casino-title">De ce este Mr. Bit alegerea noastră?</h1>
+        <p class="month-casino-p">
+          Motivele sunt numeroase și bine întemeiate. Votul nostru și votul
+          utilizatorilor contează în egală măsură. Literalmente. Situația stă în
+          felul următor:
+        </p>
 
-<div class="month-casino-benefits">
-  <h1 class="month-casino-title">Beneficii:</h1>
-  <div class="month-casino-benefits-card">
-      <img src="./assets/icons/checkmark.svg" alt="" class="month-casino-benefit-img" width="23px" height="23px">
-      <p class="month-casino-benefit-p">Bonus exclusiv via Top100Casino</p>
-  </div>
-  <div class="month-casino-benefits-card">
-    <img src="./assets/icons/checkmark.svg" alt="" class="month-casino-benefit-img"  width="23px" height="23px">
-    <p class="month-casino-benefit-p">Promoții zilnice și jocuri exclusive</p>
-</div>
-<div class="month-casino-benefits-card">
-  <img src="./assets/icons/checkmark.svg" alt="" class="month-casino-benefit-img"  width="23px" height="23px">
-  <p class="month-casino-benefit-p">Program VIP cu recompense</p>
-</div>
-<div class="month-casino-benefits-card">
-  <img src="./assets/icons/checkmark.svg" alt="" class="month-casino-benefit-img"  width="23px" height="23px">
-  <p class="month-casino-benefit-p">Retrageri rapide și sigure</p>
-</div>
-</div>
- <img src="./assets/images/gold-coins-image.webp" alt="" class="bottom-benefits-img" width="200px">
+        <p class="month-casino-p2">
+          Filtrăm cazinoul prin toate criteriile noastre: siguranță, bonusuri,
+          cerințe de rulaj, oferta de jocuri, metode de plată, taxele la
+          depunere și retragere, RTP, asistență pentru clienți, navigabilitate
+          pe mobil și interfață. Acordăm câte o notă de la 1 la 10 pentru
+          fiecare dintre aceste criterii, apoi facem media aritmetică pentru a
+          obține nota noastra finală.
+        </p>
+        <p class="month-casino-p3">
+          În cele din urmă, facem media între nota noastră și voturile
+          utilizatorilor. După cum spuneam, opinia voastră contează la fel de
+          mult ca și a noastră. Rezultatul acestui ultim calcul reflectă poziția
+          în clasament a cazinoului.
+        </p>
+      </div>
+
+      <div class="month-casino-benefits">
+        <h1 class="month-casino-title">Beneficii:</h1>
+        <div class="month-casino-benefits-card">
+          <img
+            src="./assets/icons/checkmark.svg"
+            alt=""
+            class="month-casino-benefit-img"
+            width="23px"
+            height="23px"
+          />
+          <p class="month-casino-benefit-p">Bonus exclusiv via Top100Casino</p>
+        </div>
+        <div class="month-casino-benefits-card">
+          <img
+            src="./assets/icons/checkmark.svg"
+            alt=""
+            class="month-casino-benefit-img"
+            width="23px"
+            height="23px"
+          />
+          <p class="month-casino-benefit-p">
+            Promoții zilnice și jocuri exclusive
+          </p>
+        </div>
+        <div class="month-casino-benefits-card">
+          <img
+            src="./assets/icons/checkmark.svg"
+            alt=""
+            class="month-casino-benefit-img"
+            width="23px"
+            height="23px"
+          />
+          <p class="month-casino-benefit-p">Program VIP cu recompense</p>
+        </div>
+        <div class="month-casino-benefits-card">
+          <img
+            src="./assets/icons/checkmark.svg"
+            alt=""
+            class="month-casino-benefit-img"
+            width="23px"
+            height="23px"
+          />
+          <p class="month-casino-benefit-p">Retrageri rapide și sigure</p>
+        </div>
+      </div>
+      <img
+        src="./assets/images/gold-coins-image.webp"
+        alt=""
+        class="bottom-benefits-img"
+        width="200px"
+      />
     </section>
 
     <footer>
       <div class="footer-wrapper">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.8118222781227!2d23.562498051487268!3d46.74889245472089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e76ad5a2f3b%3A0x4b9a4d5271082203!2sAleea%20B%C3%A2lea%2020-22%2C%20Cluj-Napoca%20400000!5e0!3m2!1sen!2sro!4v1643812844439!5m2!1sen!2sro" width="312" height="112" style="border-radius:16px; border:none;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <div class="footer-contact">
-        <div class="footer-location">
-          <img src="" alt="" class="location-icon">
-          <p class="footer-location-p">Aleea Balea, nr. 20-22, Cluj-Napoca</p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.8118222781227!2d23.562498051487268!3d46.74889245472089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e76ad5a2f3b%3A0x4b9a4d5271082203!2sAleea%20B%C3%A2lea%2020-22%2C%20Cluj-Napoca%20400000!5e0!3m2!1sen!2sro!4v1643812844439!5m2!1sen!2sro"
+            width="312"
+            height="112"
+            style="border-radius: 16px; border: none"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
-        <div class="footer-location">
-          <img src="" alt="" class="phone-icon">
-          <p class="footer-location-p">+40 755 000 000</p>
-        </div>
+        <div class="footer-contact">
+          <div class="footer-location">
+            <img
+              src="./assets/icons/footer_location.svg"
+              alt=""
+              class="location-icon"
+              width="17px"
+            />
+            <p class="footer-location-p">Aleea Balea, nr. 20-22, Cluj-Napoca</p>
+          </div>
+          <div class="footer-location">
+            <img
+              src="./assets/icons/footer_smartphone.svg"
+              alt=""
+              class="phone-icon"
+            />
+            <p class="footer-location-p">+40 755 000 000</p>
+          </div>
         </div>
         <div class="footer-info">
           <h1 class="footer-info-title">INFORMAțII</h1>
           <h3 class="despre-noi">Despre noi</h3>
-          <h3 class="contact">Contact</h3>
+          <h3 class="contact" id="myBtnContact">Contact</h3>
           <h3 class="anpc">ANPC</h3>
         </div>
 
         <div class="footer-main-text">
-            <p class="footer-text-legalized">Top100Casino nu intenționează să utilizeze în scopuri ilegale niciuna dintre informațiile pe care le furnizezi. Responsabilitatea privind respectarea condițiilor legate de vârstă și a tuturor celelalte aspecte legale îți revine în întregime. Te rugăm să te asiguri că le îndeplinești înainte de a te înregistra pe platforma unui operator de cazino.</p>
-            <div class="footer-images-legalized">
-              <img src="./assets/icons/footer-badge-1.png" alt="" class="footer-img-legalized" width="48px" height="48px">
-              <img src="./assets/icons/footer-badge-2.png" alt="" class="footer-img-legalized" width="48px" height="48px">
-              <img src="./assets/icons/Ffooter-badge-3.png" alt="" class="footer-img-legalized" width="48px" height="48px">
-              <img src="./assets/icons/footer-badge-4.png" alt="" class="footer-img-legalized" width="48px" height="48px">
-            </div>
+          <p class="footer-text-legalized">
+            Top100Casino nu intenționează să utilizeze în scopuri ilegale
+            niciuna dintre informațiile pe care le furnizezi. Responsabilitatea
+            privind respectarea condițiilor legate de vârstă și a tuturor
+            celelalte aspecte legale îți revine în întregime. Te rugăm să te
+            asiguri că le îndeplinești înainte de a te înregistra pe platforma
+            unui operator de cazino.
+          </p>
+          <div class="footer-images-legalized">
+            <img
+              src="./assets/icons/footer-badge-1.png"
+              alt=""
+              class="footer-img-legalized"
+              width="48px"
+              height="48px"
+            />
+            <img
+              src="./assets/icons/footer-badge-2.png"
+              alt=""
+              class="footer-img-legalized"
+              width="48px"
+              height="48px"
+            />
+            <img
+              src="./assets/icons/Ffooter-badge-3.png"
+              alt=""
+              class="footer-img-legalized"
+              width="48px"
+              height="48px"
+            />
+            <img
+              src="./assets/icons/footer-badge-4.png"
+              alt=""
+              class="footer-img-legalized"
+              width="48px"
+              height="48px"
+            />
+          </div>
         </div>
-     
+
         <div class="footer-copyright">
-          <p class="footer-copyright-p">Copyright © 2021 Top100Casino - Toate drepturile rezervate.
-            Decizia ONJN: 1420/29.07.2021
-            </p>
+          <p class="footer-copyright-p">
+            Copyright © 2021 Top100Casino - Toate drepturile rezervate. Decizia
+            ONJN: 1420/29.07.2021
+          </p>
         </div>
-<div class="arrow-up">
-        <img src="./assets/icons/chevron-up.svg" alt="" class="goUpp" width="24px" height="24px">
+        <div class="arrow-up">
+          <a href="#top">
+            <img
+              src="./assets/icons/chevron-up.svg"
+              alt=""
+              class="goUpp"
+              width="24px"
+              height="24px"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="casino-fixed" style="display: none">
+        <div class="card-contents">
+          <div class="close-fixed-casino">
+            <img
+              src="./assets/icons/tab-open.svg"
+              alt=""
+              class="close-fixed-casino-img"
+              width="24px"
+            />
+          </div>
+          <div class="card-fixed">
+            <div class="ranking-fixed">
+              <img
+                src="./assets/icons/number-1.svg"
+                alt=""
+                class="fixed-ranking-img"
+                width="36px"
+                height="36px"
+              />
+              <p class="fixed-ranking-p">1</p>
+            </div>
+            <div class="fixed-logo">
+              <img
+                src="./assets/tabel/casino logos/casino-logo_mr-bit.png"
+                alt=""
+                class="fixed-logo-img"
+                width="112px"
+              />
+            </div>
+            <div class="fixed-main-text">
+              <p class="fixed-main-text-p">
+                150%
+                <span class="fixed-main-text-span"> până la</span>
+                2000 RON
+              </p>
+            </div>
+          </div>
+          <button class="fixed-button-casino">Activează Bonusul</button>
+        </div>
+      </div>
+    </footer>
+    <!-- 
+    modal despre noi -->
+
+    <!-- Despre Noi Modal -->
+    <div id="myModalDespreNoi" class="modal">
+      <!-- Modal content despre noi -->
+      <div class="modal-content-despre-noi">
+        <img
+          src="./assets/icons/icon-mobile_cancel-menu.svg"
+          alt=""
+          class="close1"
+        />
+        <h1 class="modal-despreNoi-title">Despre noi</h1>
+        <p class="modal-despreNoi-p1">
+          Top100Casino se prezintă ca fiind liantul dintre jucători și
+          operatori. Având în spate o echipă formată din oameni cu zeci de ani
+          de experiență în domeniul gambling-ului, misiunea noastră este aceea
+          de a facilita procesul jucătorului în căutarea celor mai bune bonusuri
+          de cazino.
+        </p>
+        <p class="modal-despreNoi-p1">
+          Formăm o comunitate solidă, care s-a mărit de-a lungul timpului în
+          jurul principiilor siguranței și a transparenței. Unim mii de oameni
+          prin pasiunea pentru gambling. Transmitem calitate și încredere și o
+          facem zi de zi. Și cu ajutorul vostru, reușim.
+        </p>
       </div>
     </div>
-    </footer>
+
+    <!-- Contact-->
+    <div id="myModalContact" class="modal">
+      <!-- Modal content despre noi -->
+      <div class="modal-contact">
+        <img
+          src="./assets/icons/tab-open.svg"
+          alt=""
+          class="close2"
+          width="24px"
+        />
+        <h1 class="modal-contact-title">Contact</h1>
+        <p class="modal-contact-p1">
+          Ai o întrebare pentru noi? Contactează-ne aici! Specialiștii noștri
+          îți vor răspunde în cel mai scurt timp.
+        </p>
+
+        <p class="modal-contact-p2">Suntem si pe skype:</p>
+        <img
+          src="./assets/icons/social_skype.svg"
+          alt=""
+          class="modal-contact-img"
+          width="40px"
+          height="35px"
+        />
+
+        <div class="form-container">
+          <form action="/action_page.php">
+            <label for="name">Nume*</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="subject">Mesaj*</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 80px"
+            ></textarea>
+
+            <input type="submit" value="Trimite" />
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
     <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
