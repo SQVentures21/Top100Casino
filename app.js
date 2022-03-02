@@ -303,7 +303,6 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       arrowAcordio.style.transform = "rotate(45deg)";
-      acc.style.border = "thick solid #0000FF";
     }
   });
 }
