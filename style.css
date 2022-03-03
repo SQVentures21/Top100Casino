@@ -1226,6 +1226,13 @@ criteria section */
   color: #0e112299;
 }
 
+.testimonial-desktop {
+  display: none;
+}
+
+.testimonial-mobile {
+  display: block;
+}
 /* faq section */
 
 .faq-section {
@@ -1785,6 +1792,18 @@ footer {
   border: none;
   color: white;
 }
+
+.fixed-rotation {
+  display: none;
+}
+.fixed-evaluation {
+  display: none;
+}
+
+.fixed-casino-text {
+  display: none;
+}
+
 /* 
 modal despre noi */
 
@@ -1935,10 +1954,6 @@ label {
 
 input[type="submit"]:hover {
   background-color: #2b9658;
-}
-
-.testimonial-mobile {
-  display: none;
 }
 
 /* navbar mobile mediaquery */
@@ -2612,6 +2627,10 @@ input[type="submit"]:hover {
     text-align: left;
   }
 
+  .testimonial-desktop {
+    display: block;
+  }
+
   .accordios {
     margin-bottom: 16px;
   }
@@ -3110,5 +3129,16 @@ input[type="submit"]:hover {
   input[type="submit"] {
     width: 193px;
     margin-left: 123px;
+  }
+
+  .fixed-rotation {
+    display: block;
+  }
+  .fixed-evaluation {
+    display: block;
+  }
+
+  .fixed-casino-text {
+    display: block;
   }
 }
