@@ -2132,6 +2132,7 @@ input[type="submit"]:hover {
   .banner-logos-1 {
     display: flex;
     gap: 30px;
+    position: relative;
   }
   .logo2,
   .logo3 {
@@ -2140,8 +2141,8 @@ input[type="submit"]:hover {
   .desktop-img {
     display: block;
     position: absolute;
-    top: -226px;
-    right: 230px;
+    top: -275px;
+    left: 586px;
     z-index: 4;
   }
   .centred-text {
