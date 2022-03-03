@@ -510,6 +510,7 @@ svg.radial-progress:nth-of-type(6n + 1) circle {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: center;
+  color: black;
 }
 
 .rating {
@@ -1420,6 +1421,7 @@ criteria section */
   flex-direction: column;
   gap: 6px;
   margin-top: 16px;
+  position: relative;
 }
 
 .form-div input {
@@ -2696,6 +2698,25 @@ input[type="submit"]:hover {
     width: 493px;
   }
 
+  .form-div button {
+    height: 45px;
+    width: 193px;
+    border-radius: 10px;
+    padding: 12px 24px;
+    color: white;
+    background-color: #36bc6e;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 17px;
+  }
+
+  #emails {
+    padding: 8px 8px 8px 24px;
+    height: 61px;
+  }
+
   .bottom-text-newsletter-p {
     width: 500px;
   }
@@ -2747,15 +2768,25 @@ input[type="submit"]:hover {
   }
 
   .bottom-benefits-img {
-    width: 960px;
+    width: 40%;
   }
 
   .footer-info-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 286px;
+    gap: 168px;
     padding-top: 46px;
+  }
+
+  .footer-contact-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding-bottom: 32px;
   }
   .footer-info {
     order: 1;
@@ -2775,6 +2806,10 @@ input[type="submit"]:hover {
     width: 640px !important;
   }
 
+  .footer-contact {
+    padding: 0;
+  }
+
   .footer-info {
     text-align: left;
     align-items: flex-start;
@@ -2788,5 +2823,292 @@ input[type="submit"]:hover {
     line-height: 16px;
     letter-spacing: 0.15em;
     text-align: center;
+    padding-bottom: 32px;
+  }
+
+  .footer-contact {
+    align-items: flex-start;
+  }
+
+  .footer-location-p {
+    width: 167px;
+  }
+
+  .location-icon {
+    height: 24px;
+  }
+  .footer-text-legalized {
+    width: 1280px;
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .footer-copyright-p {
+    width: 426px;
+  }
+  .footer-images-legalized {
+    gap: 17px;
+  }
+
+  .copyright-arrow-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+
+  .footer-copyright {
+    flex: 1;
+  }
+
+  .card-contents {
+    width: 1037px;
+  }
+  .card-contents-mobile {
+    display: none;
+  }
+
+  .casino-fixed {
+    height: 99px;
+  }
+  .card-fixed {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-contents {
+    gap: 160px;
+    height: 99px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .fixed-casino-text {
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 0px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #ffbb00;
+    border-radius: 16px 14px 14px 0px;
+    padding: 4px 12px 4px 12px;
+  }
+  .ranking-fixed img {
+    height: 48px;
+    width: 48px;
+    margin-top: 0;
+  }
+
+  .fixed-ranking-p {
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .fixed-rotation {
+    width: 144px;
+  }
+
+  .fixed-rotation-p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+  }
+
+  .fixed-rotation-span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #848686;
+  }
+
+  .evaluare-text {
+    color: black;
+
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .fixed-casino-evaluare-p1 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .fixed-main-text-p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: auto;
+    width: 144px;
+  }
+
+  .fixed-main-text-span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .ranking-nr3-fixed-casino {
+    top: 17px;
+    right: 243px;
+    position: absolute;
+  }
+  .fixed-button-casino {
+    width: 172px;
+  }
+
+  .modal-content-despre-noi {
+    width: 799px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: url("./assets/images/image-pop-up_despre-noi.webp");
+    background-size: cover;
+    height: 480px;
+    border-radius: 16px;
+  }
+
+  .desktop-modal-content-desprenoi {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 340px;
+    margin-left: 408px;
+  }
+
+  .modal-despreNoi-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 57px 0px 20px 0px;
+  }
+
+  .modal-despreNoi-p1 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .modal-contact {
+    width: 520px;
+  }
+
+  .modal-contact-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .modal-contact-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .modal-contact-p1 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 20px 38px 20px 38px;
+  }
+
+  .modal-contact-p2 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .modal-contact-img {
+    width: 48px;
+    height: 48px;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+
+  .close2-desk {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .form-desk-input {
+    width: 458px !important;
+  }
+  .form-container {
+    padding-inline: 32px;
+  }
+
+  #subject {
+    height: 120px !important;
+  }
+  textarea {
+    max-height: 120px;
+    margin-bottom: 40px;
+  }
+
+  input[type="submit"] {
+    width: 193px;
+    margin-left: 123px;
   }
 }
