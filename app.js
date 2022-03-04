@@ -53,8 +53,8 @@ $(".btn.five").mouseenter(function () {
   $(".evaluare-text").text("Slab");
 });
 
-$(".rating").mouseleave(function () {
-  $(".evaluare-text").text("Lasă o notă!");
+$(".rating").click(function () {
+  $(".evaluare-text").text("Mulțumim !");
 });
 
 //end stars
@@ -75,24 +75,28 @@ btn.onclick = function () {
 
 // starts evaluation c1
 
-$(".one2").mouseenter(function () {
+$(".btn.one2").mouseenter(function () {
   $(".evaluare-textModal2").text("Excelent");
 });
-$(".two2").mouseenter(function () {
+$(".btn.two2").mouseenter(function () {
   $(".evaluare-textModal2").text("Foarte Bun");
 });
-$(".three2").mouseenter(function () {
+$(".btn.three2").mouseenter(function () {
   $(".evaluare-textModal2").text("Bun");
 });
-$(".four2").mouseenter(function () {
+$(".btn.four2").mouseenter(function () {
   $(".evaluare-textModal2").text("Decent");
 });
-$(".five2").mouseenter(function () {
+$(".btn.five2").mouseenter(function () {
   $(".evaluare-textModal2").text("Slab");
 });
 
-$(".rating").mouseleave(function () {
-  $(".evaluare-textModal2").text("Lasă o notă!");
+// $(".rating").mouseleave(function () {
+//   $(".evaluare-textModal2").text("Lasă o notă!");
+// });
+
+$(".rt2").click(function () {
+  $(".evaluare-textModal2").text("Multumim!");
 });
 
 //end stars
@@ -443,6 +447,25 @@ closeButtonContact.onclick = function () {
   modalContact.style.display = "none";
 };
 
+//modal newsletter
+
+var modalNewsletter = document.getElementById("myModalNewsletter");
+
+// Get the button that opens the modal
+var btnNewsletter = document.getElementById("myBtnNewsletter");
+
+// Get the <span> element that closes the modal
+var closeNewsletter = document.querySelector(".closeNewsletter-modal");
+
+// When the user clicks the button, open the modal
+btnNewsletter.onclick = function () {
+  modalNewsletter.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+closeNewsletter.onclick = function () {
+  modalNewsletter.style.display = "none";
+};
 //hide fixed casino
 
 const buttonHideCasino = document.querySelector(".close-fixed-casino");
@@ -451,3 +474,49 @@ const casinoFixedBottom = document.querySelector(".casino-fixed");
 buttonHideCasino.addEventListener("click", () => {
   $(".casino-fixed").fadeOut();
 });
+
+//click newsletter change text
+
+function onMouseOut(event) {
+  // If the mouse is near the top of the window, show the popup
+  if (event.clientY < 50) {
+    // Remove this event listener
+    document.removeEventListener("mouseout", onMouseOut);
+
+    // Show the popup
+    document.getElementById("popup").style.display = "block";
+  }
+}
+
+document.addEventListener("mouseout", onMouseOut);
+
+const buttonExitPopup = document.querySelector(".exit-popup");
+
+buttonExitPopup.onclick = function () {
+  document.getElementById("popup").style.display = "none";
+};
+
+//leave counter modal
+
+const countDown = () => {
+  const countDate = new Date("March 20 , 2022 00:00:00").getTime();
+  const now = new Date().getTime();
+  const gap = countDate - now;
+
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  const textDay = Math.floor(gap / day);
+  const textHour = Math.floor((gap % day) / hour);
+  const textMinutes = Math.floor((gap % hour) / minute);
+  const textSeconds = Math.floor((gap % minute) / second);
+
+  document.querySelector(".day").innerText = textDay;
+  document.querySelector(".hour").innerText = textHour;
+  document.querySelector(".minute").innerText = textMinutes;
+  document.querySelector(".second").innerText = textSeconds;
+};
+
+setInterval(countDown, 1000);
