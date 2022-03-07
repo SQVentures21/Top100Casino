@@ -787,7 +787,7 @@ buttonHideCasino.addEventListener("click", () => {
 
 $(document).scroll(function () {
   var scroll = $(this).scrollTop();
-  if (scroll > y - 250 && closedPopup === false) {
+  if (scroll > y + 100 && closedPopup === false) {
     $(".casino-fixed").fadeIn();
   } else {
     $(".casino-fixed").fadeOut();
