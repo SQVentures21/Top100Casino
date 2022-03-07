@@ -552,67 +552,51 @@ svg.radial-progress1:nth-of-type(6n + 1) circle {
   color: black;
 }
 
+/* star 1 */
+
 .rating {
-  margin: 0 auto;
-  width: 112px;
-  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
-.rating label {
-  float: right;
-  position: relative;
-  width: 22px;
-  height: 20px;
+
+.rating li {
+  list-style-type: none;
+}
+
+.rating-item {
+  border: 1px solid #fff;
   cursor: pointer;
+
+  height: 20px;
 }
-.rating label:not(:first-of-type) {
-  padding-right: 2px;
-}
-.rating label:before {
-  content: url("./assets/icons/review-star.svg");
-  margin-top: 15px;
-  color: #cccccc;
-  line-height: 1;
-}
-.rating input {
-  display: none;
-}
-.rating input:checked ~ label:before,
-.rating:not(:checked) > label:hover:before,
-.rating:not(:checked) > label:hover ~ label:before {
+
+/* initial: make all stars full */
+.rating-item::before {
   content: url("./assets/icons/reviews-star_selected.svg");
+  height: 15px;
+}
+
+/* make until the clicked star (the rest) empty */
+.rating-item.active ~ .rating-item::before {
+  content: url("./assets/icons/review-star.svg");
+  height: 15px;
+}
+
+/* on hover make all full */
+.rating:hover .rating-item::before {
+  content: url("./assets/icons/reviews-star_selected.svg");
+  height: 15px;
+}
+
+/* make until the hovered (the rest) empty */
+.rating-item:hover ~ .rating-item::before {
+  content: url("./assets/icons/review-star.svg");
+  height: 15px;
 }
 
 /* 
-star2 */
-.rating2 {
-  margin: 0 auto;
-  width: 112px;
-  padding-bottom: 24px;
-}
-.rating2 label {
-  float: right;
-  position: relative;
-  width: 22px;
-  height: 20px;
-  cursor: pointer;
-}
-.rating2 label:not(:first-of-type) {
-  padding-right: 2px;
-}
-.rating2 label:before {
-  content: url("./assets/icons/review-star.svg");
-  margin-top: 15px;
-  color: #cccccc;
-  line-height: 1;
-}
-.rating2 input {
-  display: none;
-}
-.rating2 input:checked ~ label:before,
-.rating2:not(:checked) > label:hover:before,
-.rating2:not(:checked) > label:hover ~ label:before {
-  content: url("./assets/icons/reviews-star_selected.svg");
-}
 
 /* 
 css button */
@@ -684,6 +668,7 @@ css button */
   width: 320px;
   background: #f6f6f6;
   border-radius: 0px 0px 16px 16px;
+  transition: 0.5s all;
 }
 
 .card-Arrow-section-1 {
@@ -2257,6 +2242,9 @@ modal newsletter */
   text-align: center;
 }
 
+.footer-contact-title {
+  display: none;
+}
 @media (max-width: 700px) {
   .navbar {
     flex-direction: column;
@@ -2634,6 +2622,7 @@ modal newsletter */
     border-radius: 0px 0px 16px 16px;
     justify-content: space-between;
     height: 100%;
+    transition: 0.5s all;
   }
 
   .arrow-wrapper {
@@ -3453,6 +3442,45 @@ modal newsletter */
     letter-spacing: 0em;
     text-align: center;
     color: #6b6e6d;
+  }
+
+  .popup__container {
+    height: 466px;
+    width: 800px;
+    background: url("./assets/images/image_exit-pop-up_superbet.webp");
+  }
+  .wrapper-popup {
+    width: 380px;
+  }
+
+  .popup-p {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .popup-span {
+    font-size: 24px;
+  }
+  .count {
+    padding-bottom: 16px;
+  }
+  .counter-text {
+    width: 380px;
+    padding-bottom: 24px;
+  }
+
+  .footer-contact-title {
+    display: flex;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-align: center;
   }
 }
 
