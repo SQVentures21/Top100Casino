@@ -787,27 +787,32 @@ buttonHideCasino.addEventListener("click", () => {
 
 $(document).scroll(function () {
   var scroll = $(this).scrollTop();
-  if (scroll > y - 150 && closedPopup === false) {
+  if (scroll > y - 250 && closedPopup === false) {
     $(".casino-fixed").fadeIn();
   } else {
     $(".casino-fixed").fadeOut();
   }
 });
 
+console.log(y);
+
 // Get the modal despre noi
 var modalDespreNoi = document.getElementById("myModalDespreNoi");
 
 // Get the button that opens the modal
-var btnDespreNoi = document.getElementById("myBtnDespreNoi");
+var btnDespreNoi = document.getElementsByClassName("myBtnDespreNoicls");
 
 // Get the <span> element that closes the modal
 var closeButtonDespreNoi = document.querySelector(".close1");
 
 // When the user clicks the button, open the modal
-btnDespreNoi.onclick = function () {
+btnDespreNoi[0].onclick = function () {
   modalDespreNoi.style.display = "block";
 };
 
+btnDespreNoi[1].onclick = function () {
+  modalDespreNoi.style.display = "block";
+};
 // When the user clicks on <span> (x), close the modal
 closeButtonDespreNoi.onclick = function () {
   modalDespreNoi.style.display = "none";
@@ -817,13 +822,17 @@ closeButtonDespreNoi.onclick = function () {
 var modalContact = document.getElementById("myModalContact");
 
 // Get the button that opens the modal
-var btnContact = document.getElementById("myBtnContact");
+var btnContact = document.getElementsByClassName("myBtnContact");
 
 // Get the <span> element that closes the modal
 var closeButtonContact = document.querySelector(".close2");
 
 // When the user clicks the button, open the modal
-btnContact.onclick = function () {
+btnContact[0].onclick = function () {
+  modalContact.style.display = "block";
+};
+
+btnContact[1].onclick = function () {
   modalContact.style.display = "block";
 };
 
@@ -876,7 +885,7 @@ buttonExitPopup.onclick = function () {
 //leave counter modal
 
 const countDown = () => {
-  const countDate = new Date("March 20 , 2022 00:00:00").getTime();
+  const countDate = new Date("March 25 , 2022 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 
@@ -894,6 +903,32 @@ const countDown = () => {
   document.querySelector(".hour").innerText = textHour;
   document.querySelector(".minute").innerText = textMinutes;
   document.querySelector(".second").innerText = textSeconds;
+
+  //zi acutalizata
+
+  document.querySelector(".zi-acutalizata").innerText = textDay;
+};
+
+const dataActuala = () => {
+  const month = new Array();
+  month[0] = "Ianuarie";
+  month[1] = "Februarie";
+  month[2] = "Martie";
+  month[3] = "Aprilie";
+  month[4] = "Mai";
+  month[5] = "Iunie";
+  month[6] = "Iulie";
+  month[7] = "August";
+  month[8] = "Septembrie";
+  month[9] = "Octombrie";
+  month[10] = "Noviembrie";
+  month[11] = "Decembrie";
+
+  var d = new Date();
+  document.querySelector(".luna-actualizata").innerText =
+    " " + month[d.getMonth()];
+  document.querySelector(".an-acutalizat").innerText = d.getFullYear();
 };
 
 setInterval(countDown, 1000);
+setInterval(dataActuala, 1000);
