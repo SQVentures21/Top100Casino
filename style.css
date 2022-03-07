@@ -48,7 +48,7 @@ a {
 }
 
 .container-width80 {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -309,7 +309,7 @@ navbar style */
 /* main-cards */
 
 .main-cards {
-  background: url("./assets/images/card-background.jpg");
+  background: url("./assets/images/card-background.webp");
   background-repeat: repeat;
   width: 100%;
   max-width: 100vw;
@@ -2283,6 +2283,11 @@ modal newsletter */
   }
 }
 
+@media (min-width: 370px) {
+  .container-width80 {
+    width: 80%;
+  }
+}
 @media (min-width: 530px) {
   .card-contents {
     display: flex;
