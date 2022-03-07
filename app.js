@@ -35,30 +35,434 @@ $(function () {
     .trigger("scroll");
 });
 
-// starts evaluation c1
+// stars
 
-$(".btn.one").mouseenter(function () {
-  $(".evaluare-text").text("Excelent");
-});
-$(".btn.two").mouseenter(function () {
-  $(".evaluare-text").text("Foarte Bun");
-});
-$(".btn.three").mouseenter(function () {
-  $(".evaluare-text").text("Bun");
-});
-$(".btn.four").mouseenter(function () {
-  $(".evaluare-text").text("Decent");
-});
-$(".btn.five").mouseenter(function () {
+// star 1
+
+$(".starOne-1").mouseenter(function () {
   $(".evaluare-text").text("Slab");
 });
-
-$(".rating").click(function () {
-  $(".evaluare-text").text("Mulțumim !");
+$(".starOne-2").mouseenter(function () {
+  $(".evaluare-text").text("Decent");
+});
+$(".starOne-3").mouseenter(function () {
+  $(".evaluare-text").text("Bun");
+});
+$(".starOne-4").mouseenter(function () {
+  $(".evaluare-text").text("Foarte Bun");
+});
+$(".starOne-5").mouseenter(function () {
+  $(".evaluare-text").text("Excelent");
 });
 
-//end stars
+// $(".rating").mouseleave(function () {
+//   $(".evaluare-textModal2").text("Lasă o notă!");
+// });
 
+$(".ratingStarOne").click(function () {
+  $(".evaluare-text").text("Multumim!");
+});
+
+const containerStarOne = document.querySelector(".ratingStarOne");
+const itemsStarOne = containerStarOne.querySelectorAll(".rating-item");
+containerStarOne.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarOne.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    console.log(e.target.getAttribute("data-rate"));
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+// star 2
+
+$(".starTwo-1").mouseenter(function () {
+  $(".evaluare-textStarTwo").text("Slab");
+});
+$(".starTwo-2").mouseenter(function () {
+  $(".evaluare-textStarTwo").text("Decent");
+});
+$(".starTwo-3").mouseenter(function () {
+  $(".evaluare-textStarTwo").text("Bun");
+});
+$(".starTwo-4").mouseenter(function () {
+  $(".evaluare-textStarTwo").text("Foarte Bun");
+});
+$(".starTwo-5").mouseenter(function () {
+  $(".evaluare-textStarTwo").text("Excelent");
+});
+
+$(".ratingStarTwo").click(function () {
+  $(".evaluare-textStarTwo").text("Multumim!");
+});
+
+const containerStarTwo = document.querySelector(".ratingStarTwo");
+const itemsStarTwo = containerStarTwo.querySelectorAll(".rating-item");
+containerStarTwo.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarTwo.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star3
+$(".starThree-1").mouseenter(function () {
+  $(".evaluare-textStarThree").text("Slab");
+});
+$(".sstarThree-2").mouseenter(function () {
+  $(".evaluare-textStarThree").text("Decent");
+});
+$(".starThree-3").mouseenter(function () {
+  $(".evaluare-textStarThree").text("Bun");
+});
+$(".starThree-4").mouseenter(function () {
+  $(".evaluare-textStarThree").text("Foarte Bun");
+});
+$(".starThree-5").mouseenter(function () {
+  $(".evaluare-textStarThree").text("Excelent");
+});
+
+$(".ratingStarThree").click(function () {
+  $(".evaluare-textStarThree").text("Multumim!");
+});
+
+const containerStarThree = document.querySelector(".ratingStarThree");
+const itemsStarThree = containerStarThree.querySelectorAll(".rating-item");
+containerStarThree.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarThree.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star4
+$(".starFour-1").mouseenter(function () {
+  $(".evaluare-textStarFour").text("Slab");
+});
+$(".starFour-2").mouseenter(function () {
+  $(".evaluare-textStarFour").text("Decent");
+});
+$(".starFour-3").mouseenter(function () {
+  $(".evaluare-textStarFour").text("Bun");
+});
+$(".starFour-4").mouseenter(function () {
+  $(".evaluare-textStarFour").text("Foarte Bun");
+});
+$(".starFour-5").mouseenter(function () {
+  $(".evaluare-textStarFour").text("Excelent");
+});
+
+$(".ratingStarFour").click(function () {
+  $(".evaluare-textStarFour").text("Multumim!");
+});
+
+const containerStarFour = document.querySelector(".ratingStarFour");
+const itemsStarFour = containerStarFour.querySelectorAll(".rating-item");
+containerStarFour.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarFour.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star5
+$(".starFive-1").mouseenter(function () {
+  $(".evaluare-textStarFive").text("Slab");
+});
+$(".starFive-2").mouseenter(function () {
+  $(".evaluare-textStarFive").text("Decent");
+});
+$(".starFive-3").mouseenter(function () {
+  $(".evaluare-textStarFive").text("Bun");
+});
+$(".starFive-4").mouseenter(function () {
+  $(".evaluare-textStarFive").text("Foarte Bun");
+});
+$(".starFive-5").mouseenter(function () {
+  $(".evaluare-textStarFive").text("Excelent");
+});
+
+$(".ratingStarFive").click(function () {
+  $(".evaluare-textStarFive").text("Multumim!");
+});
+
+const containerStarFive = document.querySelector(".ratingStarFive");
+const itemsStarFive = containerStarFive.querySelectorAll(".rating-item");
+containerStarFive.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarFive.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star6
+$(".starSix-1").mouseenter(function () {
+  $(".evaluare-textStarSix").text("Slab");
+});
+$(".starSix-2").mouseenter(function () {
+  $(".evaluare-textStarSix").text("Decent");
+});
+$(".starSix-3").mouseenter(function () {
+  $(".evaluare-textStarSix").text("Bun");
+});
+$(".starSix-4").mouseenter(function () {
+  $(".evaluare-textStarSix").text("Foarte Bun");
+});
+$(".starSix-5").mouseenter(function () {
+  $(".evaluare-textStarSix").text("Excelent");
+});
+
+$(".ratingStarSix").click(function () {
+  $(".evaluare-textStarSix").text("Multumim!");
+});
+
+const containerStarSix = document.querySelector(".ratingStarSix");
+const itemsStarSix = containerStarSix.querySelectorAll(".rating-item");
+containerStarSix.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarSix.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star7
+$(".starSeven-1").mouseenter(function () {
+  $(".evaluare-textStarSeven").text("Slab");
+});
+$(".starSeven-2").mouseenter(function () {
+  $(".evaluare-textStarSeven").text("Decent");
+});
+$(".starSeven-3").mouseenter(function () {
+  $(".evaluare-textStarSeven").text("Bun");
+});
+$(".starSeven-4").mouseenter(function () {
+  $(".evaluare-textStarSeven").text("Foarte Bun");
+});
+$(".starSeven-5").mouseenter(function () {
+  $(".evaluare-textStarSeven").text("Excelent");
+});
+
+$(".ratingStarSeven").click(function () {
+  $(".evaluare-textStarSeven").text("Multumim!");
+});
+
+const containerStarSeven = document.querySelector(".ratingStarSeven");
+const itemsStarSeven = containerStarSeven.querySelectorAll(".rating-item");
+containerStarSeven.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarSeven.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star8
+$(".starEight-1").mouseenter(function () {
+  $(".evaluare-textStarEight").text("Slab");
+});
+$(".starEight-2").mouseenter(function () {
+  $(".evaluare-textStarEight").text("Decent");
+});
+$(".starEight-3").mouseenter(function () {
+  $(".evaluare-textStarEight").text("Bun");
+});
+$(".starEight-4").mouseenter(function () {
+  $(".evaluare-textStarEight").text("Foarte Bun");
+});
+$(".starEight-5").mouseenter(function () {
+  $(".evaluare-textStarEight").text("Excelent");
+});
+
+$(".ratingStarEight").click(function () {
+  $(".evaluare-textStarEight").text("Multumim!");
+});
+
+const containerStarEight = document.querySelector(".ratingStarEight");
+const itemsStarEight = containerStarEight.querySelectorAll(".rating-item");
+containerStarEight.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarEight.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star9
+$(".starNine-1").mouseenter(function () {
+  $(".evaluare-textStarNine").text("Slab");
+});
+$(".starNine-2").mouseenter(function () {
+  $(".evaluare-textStarNine").text("Decent");
+});
+$(".starNine-3").mouseenter(function () {
+  $(".evaluare-textStarNine").text("Bun");
+});
+$(".starNine-4").mouseenter(function () {
+  $(".evaluare-textStarNine").text("Foarte Bun");
+});
+$(".starNine-5").mouseenter(function () {
+  $(".evaluare-textStarNine").text("Excelent");
+});
+
+$(".ratingStarNine").click(function () {
+  $(".evaluare-textStarNine").text("Multumim!");
+});
+
+const containerStarNine = document.querySelector(".ratingStarNine");
+const itemsStarNine = containerStarNine.querySelectorAll(".rating-item");
+containerStarNine.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarNine.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star10
+$(".starTen-1").mouseenter(function () {
+  $(".evaluare-textStarTen").text("Slab");
+});
+$(".starTen-2").mouseenter(function () {
+  $(".evaluare-textStarTen").text("Decent");
+});
+$(".starTen-3").mouseenter(function () {
+  $(".evaluare-textStarTen").text("Bun");
+});
+$(".starTen-4").mouseenter(function () {
+  $(".evaluare-textStarTen").text("Foarte Bun");
+});
+$(".starTen-5").mouseenter(function () {
+  $(".evaluare-textStarTen").text("Excelent");
+});
+
+$(".ratingStarTen").click(function () {
+  $(".evaluare-textStarTen").text("Multumim!");
+});
+
+const containerStarTen = document.querySelector(".ratingStarTen");
+const itemsStarTen = containerStarTen.querySelectorAll(".rating-item");
+containerStarTen.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarTen.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star11
+$(".starEleven-1").mouseenter(function () {
+  $(".evaluare-textStarEleven").text("Slab");
+});
+$(".starEleven-2").mouseenter(function () {
+  $(".evaluare-textStarEleven").text("Decent");
+});
+$(".starEleven-3").mouseenter(function () {
+  $(".evaluare-textStarEleven").text("Bun");
+});
+$(".starEleven-4").mouseenter(function () {
+  $(".evaluare-textStarEleven").text("Foarte Bun");
+});
+$(".starEleven-5").mouseenter(function () {
+  $(".evaluare-textStarEleven").text("Excelent");
+});
+
+$(".ratingStarEleven").click(function () {
+  $(".evaluare-textStarEleven").text("Multumim!");
+});
+
+const containerStarEleven = document.querySelector(".ratingStarEleven");
+const itemsStarEleven = containerStarEleven.querySelectorAll(".rating-item");
+containerStarEleven.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarEleven.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
+
+//star12
+$(".starTwelve-1").mouseenter(function () {
+  $(".evaluare-textStarTwelve").text("Slab");
+});
+$(".starTwelve-2").mouseenter(function () {
+  $(".evaluare-textStarTwelve").text("Decent");
+});
+$(".starTwelve-3").mouseenter(function () {
+  $(".evaluare-textStarTwelve").text("Bun");
+});
+$(".starTwelve-4").mouseenter(function () {
+  $(".evaluare-textStarTwelve").text("Foarte Bun");
+});
+$(".starTwelve-5").mouseenter(function () {
+  $(".evaluare-textStarTwelve").text("Excelent");
+});
+
+$(".ratingStarTwelve").click(function () {
+  $(".evaluare-textStarTwelve").text("Multumim!");
+});
+
+const containerStarTwelve = document.querySelector(".ratingStarTwelve");
+const itemsStarTwelve = containerStarTwelve.querySelectorAll(".rating-item");
+containerStarTwelve.onclick = (e) => {
+  const elClass = e.target.classList;
+  // change the rating if the user clicks on a different star
+  if (!elClass.contains("active")) {
+    itemsStarTwelve.forEach(
+      // reset the active class on the star
+      (item) => item.classList.remove("active")
+    );
+    elClass.add("active"); // add active class to the clicked star
+  }
+};
 //arrow div hide/show
 
 const targetDiv = document.getElementById("myDiv");
@@ -72,34 +476,6 @@ btn.onclick = function () {
     btn.style.transform = "rotate(360deg)";
   }
 };
-
-// starts evaluation c1
-
-$(".btn.one2").mouseenter(function () {
-  $(".evaluare-textModal2").text("Excelent");
-});
-$(".btn.two2").mouseenter(function () {
-  $(".evaluare-textModal2").text("Foarte Bun");
-});
-$(".btn.three2").mouseenter(function () {
-  $(".evaluare-textModal2").text("Bun");
-});
-$(".btn.four2").mouseenter(function () {
-  $(".evaluare-textModal2").text("Decent");
-});
-$(".btn.five2").mouseenter(function () {
-  $(".evaluare-textModal2").text("Slab");
-});
-
-// $(".rating").mouseleave(function () {
-//   $(".evaluare-textModal2").text("Lasă o notă!");
-// });
-
-$(".rt2").click(function () {
-  $(".evaluare-textModal2").text("Multumim!");
-});
-
-//end stars
 
 // modal 2 show/hide
 
@@ -395,14 +771,23 @@ function getOffset(el) {
 }
 var x = getOffset(document.querySelector(".wrap-modal-arrow-12")).left;
 var y = getOffset(document.querySelector(".wrap-modal-arrow-12")).top;
-console.log("x: " + x);
-console.log("y: " + y);
+
+//hide fixed casino
+
+const buttonHideCasino = document.querySelector(".close-fixed-casino");
+const casinoFixedBottom = document.querySelector(".casino-fixed");
+let closedPopup = false;
+
+buttonHideCasino.addEventListener("click", () => {
+  $(".casino-fixed").fadeOut();
+  closedPopup = true;
+});
 
 //show position fixed casino
 
 $(document).scroll(function () {
   var scroll = $(this).scrollTop();
-  if (scroll > y - 150) {
+  if (scroll > y - 150 && closedPopup === false) {
     $(".casino-fixed").fadeIn();
   } else {
     $(".casino-fixed").fadeOut();
@@ -466,14 +851,6 @@ btnNewsletter.onclick = function () {
 closeNewsletter.onclick = function () {
   modalNewsletter.style.display = "none";
 };
-//hide fixed casino
-
-const buttonHideCasino = document.querySelector(".close-fixed-casino");
-const casinoFixedBottom = document.querySelector(".casino-fixed");
-
-buttonHideCasino.addEventListener("click", () => {
-  $(".casino-fixed").fadeOut();
-});
 
 //click newsletter change text
 
