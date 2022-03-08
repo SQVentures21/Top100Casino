@@ -2563,6 +2563,7 @@ modal newsletter */
     flex-direction: row;
     gap: 46px;
     align-items: center;
+    margin: 0;
   }
 
   .rankings {
