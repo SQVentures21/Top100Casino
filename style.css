@@ -880,17 +880,17 @@ css button */
 }
 
 .card1-bg {
-  background: url("./assets/images/card-background.jpg");
+  background: url("./assets/images/card-background.webp");
   position: relative;
 }
 
 .card2-bg {
-  background: url("./assets/images/card-background.jpg");
+  background: url("./assets/images/card-background.webp");
   position: relative;
 }
 
 .card3-bg {
-  background: url("./assets/images/card-background.jpg");
+  background: url("./assets/images/card-background.webp");
   position: relative;
 }
 
@@ -943,7 +943,7 @@ steps-section */
   position: relative;
   display: flex;
   justify-content: center;
-  background-image: url("./assets/images/card-background.jpg");
+  background-image: url("./assets/images/card-background.webp");
   margin-top: 120px;
   flex-direction: column;
   padding-bottom: 68px;
@@ -1045,7 +1045,7 @@ criteria section */
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/images/card-background.jpg");
+  background-image: url("./assets/images/card-background.webp");
 }
 
 .bg-1 {
@@ -1102,7 +1102,7 @@ criteria section */
   align-items: center;
 
   margin-inline: auto;
-  background: url("./assets/images/card-background.jpg");
+  background: url("./assets/images/card-background.webp");
 }
 
 .about-us-section-title {
@@ -1298,7 +1298,7 @@ criteria section */
 .faq-section {
   width: 100%;
   position: relative;
-  background-image: url("./assets/images/card-background.jpg");
+  background-image: url("./assets/images/card-background.webp");
   margin-top: 48px;
 }
 
