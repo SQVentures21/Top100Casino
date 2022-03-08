@@ -873,11 +873,11 @@ css button */
 .card-Arrow-section-5-images {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
 }
 
 .card-Arrow-section-5-images img {
   border-radius: 4px;
+  margin-right: 3px;
 }
 
 /* card 2 */
