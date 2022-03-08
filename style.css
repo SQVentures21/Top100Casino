@@ -1375,6 +1375,8 @@ criteria section */
   position: relative;
   background-image: url("./assets/images/card-background.webp");
   margin-top: 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .faq-section-first-left-h1 {
@@ -2327,6 +2329,10 @@ modal newsletter */
 .footer-contact-title {
   display: none;
 }
+
+.month-casino-container {
+  width: 100%;
+}
 @media (max-width: 700px) {
   .navbar {
     flex-direction: column;
@@ -2436,6 +2442,13 @@ modal newsletter */
     display: flex;
     flex-wrap: wrap;
   }
+  .container-width80-flex {
+    gap: 0;
+  }
+
+  .card {
+    margin: 8px;
+  }
 
   .main-cards,
   .steps-section,
@@ -2452,7 +2465,12 @@ modal newsletter */
   .section-criteria-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    gap: 0;
+  }
+
+  .criteria-section-card {
+    margin-left: 20px;
+    margin-bottom: 80px;
   }
 
   .about-swipper {
@@ -2462,10 +2480,11 @@ modal newsletter */
   .about-us-section-cards {
     display: flex;
     flex-wrap: wrap;
+    gap: 0;
   }
 
   .about-us-section-card {
-    margin-bottom: 0;
+    margin: 10px;
   }
 
   .roaster-desk {
