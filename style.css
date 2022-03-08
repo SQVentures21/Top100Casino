@@ -2455,9 +2455,13 @@ modal newsletter */
   .steps-section,
   .criteria-section-card,
   .about-us-section,
-  .faq-section {
+  .faq-section,
+  .card1-bg,
+  .card2-bg,
+  .card3-bg {
     background-image: url("./assets/images/card-background.jpg");
   }
+
   .swiper-criteria {
     display: none;
   }
