@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
+
 /* poppins-regular - latin-ext_latin */
 @font-face {
   font-family: "Poppins";
@@ -122,39 +123,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --main-font-size-1: 40px;
-  --main-font-size-2: 32px;
-  --main-font-size-3: 20px;
-  --main-font-size-4: 16px;
-  --main-font-size-5: 14px;
-  --main-font-size-6: 13px;
-  --main-font-size-7: 11px;
-
-  --all-font-weight-1: 600;
-  --all-font-weight-2: 500;
-
-  --main-line-height-1: 48;
-  --main-line-height-2: 38;
-  --main-line-height-3: 26;
-  --main-line-height-4: 24;
-  --main-line-height-5: 20;
-  --main-line-height-6: 16;
-
-  --mobile-font-size-1: 28px;
-  --mobile-font-size-2: 24px;
-  --mobile-font-size-3: 20px;
-  --mobile-font-size-4: 14px;
-  --mobile-font-size-5: 13px;
-  --mobile-font-size-6: 11px;
-
-  --mobile-line-height-1: 32;
-  --mobile-line-height-2: 29;
-  --mobile-line-height-3: 26;
-  --mobile-line-height-4: 20;
-  --mobile-line-height-5: 16;
-}
-
 .container-width80 {
   width: 90%;
   margin: 0 auto;
@@ -174,7 +142,7 @@ a {
 first section */
 
 .first-section {
-  background: url("./assets/mobile/main-banner_mobile.webp");
+  background: url("./assets/mobile/jpg/main-banner_mobile.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -417,7 +385,7 @@ navbar style */
 /* main-cards */
 
 .main-cards {
-  background: url("./assets/images/card-background.webp");
+  background: url("./assets/images/card-background.jpg");
   background-repeat: repeat;
   width: 100%;
   max-width: 100vw;
@@ -988,17 +956,17 @@ css button */
 }
 
 .card1-bg {
-  background: url("./assets/images/card-background.webp");
+  background: url("./assets/images/card-background.jpg");
   position: relative;
 }
 
 .card2-bg {
-  background: url("./assets/images/card-background.webp");
+  background: url("./assets/images/card-background.jpg");
   position: relative;
 }
 
 .card3-bg {
-  background: url("./assets/images/card-background.webp");
+  background: url("./assets/images/card-background.jpg");
   position: relative;
 }
 
@@ -1051,7 +1019,7 @@ steps-section */
   position: relative;
   display: flex;
   justify-content: center;
-  background-image: url("./assets/images/card-background.webp");
+  background-image: url("./assets/images/card-background.jpg");
   margin-top: 120px;
   flex-direction: column;
   padding-bottom: 68px;
@@ -1153,7 +1121,7 @@ criteria section */
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/images/card-background.webp");
+  background-image: url("./assets/images/card-background.jpg");
 }
 
 .bg-1 {
@@ -1208,9 +1176,8 @@ criteria section */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin-inline: auto;
-  background: url("./assets/images/card-background.webp");
+  background: url("./assets/images/card-background.jpg");
 }
 
 .about-us-section-title {
@@ -1358,7 +1325,7 @@ criteria section */
 .testimonial-card {
   height: 340px;
   width: 340px;
-  background: url("./assets/mobile/review-background_mobile.webp");
+  background: url("./assets/mobile/jpg/review-background_mobile.jpg");
   background-size: cover;
   padding: 38px 38px 82px 38px;
   margin-bottom: 20px;
@@ -1406,7 +1373,7 @@ criteria section */
 .faq-section {
   width: 100%;
   position: relative;
-  background-image: url("./assets/images/card-background.webp");
+  background-image: url("./assets/images/card-background.jpg");
   margin-top: 48px;
 }
 
@@ -1428,6 +1395,9 @@ criteria section */
   gap: 30px;
 }
 
+.faq-desk {
+  display: none;
+}
 .faq-section-first-left {
   display: flex;
   width: 100%;
@@ -1548,7 +1518,7 @@ criteria section */
 .faq-section-first-2 {
   margin-top: 250px;
   position: relative;
-  background-image: url("./assets/mobile/newletter-background_mobile.webp");
+  background-image: url("./assets/mobile/jpg/newsletter-background_mobile.jpg");
   width: 80%;
   margin-inline: auto;
   height: 453px;
@@ -1995,7 +1965,7 @@ modal despre noi */
 
 /* Modal Content/Box */
 .modal-content-despre-noi {
-  background: url("./assets/mobile/despre-noi_mobile.webp");
+  background: url("./assets/mobile/jpg/despre-noi_mobile.jpg");
   background-size: cover;
   margin: 15% auto; /* 15% from the top and centered */
   width: 328px; /* Could be more or less, depending on screen size */
@@ -2223,7 +2193,7 @@ modal newsletter */
   width: 328px;
   height: 560px;
   border-radius: 16px;
-  background: url("./assets/mobile/exit-pop-up_mobile.webp");
+  background: url("./assets/mobile/jpg/exit-pop-up_mobile.jpg");
   background-size: cover;
   color: white;
   display: flex;
@@ -2444,7 +2414,7 @@ modal newsletter */
 
 @media (min-width: 700px) {
   .first-section {
-    background: url("./assets/tablet/Tablet-banner_background.webp");
+    background: url("./assets/tablet/jpg/Tablet-banner_background\ \(1\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -2496,7 +2466,7 @@ modal newsletter */
 
 @media (min-width: 1290px) {
   .first-section {
-    background: url("./assets/images/main-banner-background.webp");
+    background: url("./assets/images/jpg/main-banner-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2991,7 +2961,7 @@ modal newsletter */
   .testimonial-card {
     height: 273px;
     width: 632px;
-    background: url("./assets/images/review_background_desktop.webp");
+    background: url("./assets/images/jpg/review_background_desktop.jpg");
     background-size: cover;
     border-radius: 0px;
     margin-left: 16px;
@@ -3098,7 +3068,7 @@ modal newsletter */
   }
 
   .faq-section-first-2 {
-    background: url("./assets/images/newsletter-background.webp");
+    background: url("./assets/images/jpg/newsletter-background.jpg");
     width: 1280px;
     background-size: cover;
     margin-bottom: 154px;
@@ -3168,6 +3138,10 @@ modal newsletter */
     letter-spacing: 0em;
     text-align: center;
     margin-bottom: 24px;
+  }
+
+  .faq-desk {
+    display: block;
   }
 
   .month-casino {
@@ -3429,7 +3403,7 @@ modal newsletter */
     left: 0px;
     top: 0px;
     border-radius: 0px;
-    background: url("./assets/images/image-pop-up_despre-noi.webp");
+    background: url("./assets/images/jpg/image-pop-up_despre-noi.jpg");
     background-size: cover;
     height: 480px;
     border-radius: 16px;
@@ -3564,7 +3538,7 @@ modal newsletter */
   .popup__container {
     height: 466px;
     width: 800px;
-    background: url("./assets/images/image_exit-pop-up_superbet.webp");
+    background: url("./assets/images/jpg/image_exit-pop-up_superbet.jpg");
   }
   .wrapper-popup {
     width: 380px;
