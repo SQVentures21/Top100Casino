@@ -1290,7 +1290,7 @@ criteria section */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .testimonials-section-title {
@@ -1542,7 +1542,7 @@ criteria section */
   align-items: center;
   flex-direction: column;
   width: 80%;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 .faq-section-first-text-h1 {
   font-family: Poppins;
