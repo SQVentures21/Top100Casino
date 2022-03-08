@@ -1522,7 +1522,7 @@ criteria section */
   position: relative;
   background-image: url("./assets/mobile/newletter-background_mobile.webp");
   width: 80%;
-  margin-inline: auto;
+  margin: 250px auto 0 auto;
   height: 453px;
   width: 312px;
   border-radius: 24px;
@@ -1650,7 +1650,7 @@ criteria section */
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .month-casino-text {
@@ -1658,7 +1658,7 @@ criteria section */
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin-inline: auto;
+  margin: 0 auto;
   flex-direction: column;
 }
 
@@ -1691,7 +1691,7 @@ criteria section */
 .month-casino-benefits {
   display: flex;
   width: 80%;
-  margin-inline: auto;
+  margin: 0 auto;
   flex-direction: column;
   padding-bottom: 65px;
 }
@@ -3064,7 +3064,7 @@ modal newsletter */
     width: 1280px;
     justify-content: center;
     align-items: center;
-    margin-inline: auto;
+    margin: 0 auto;
     gap: 133px;
     padding-top: 96px;
   }
