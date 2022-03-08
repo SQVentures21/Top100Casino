@@ -2454,9 +2454,7 @@ modal newsletter */
   .steps-section,
   .criteria-section-card,
   .about-us-section,
-  .faq-section,
-  .modal-content-despre-noi,
-  .popup__container {
+  .faq-section {
     background-image: url("./assets/images/card-background.jpg");
   }
   .swiper-criteria {
