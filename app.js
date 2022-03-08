@@ -905,8 +905,6 @@ const countDown = () => {
   document.querySelector(".second").innerText = textSeconds;
 
   //zi acutalizata
-
-  document.querySelector(".zi-acutalizata").innerText = textDay;
 };
 
 const dataActuala = () => {
@@ -928,6 +926,7 @@ const dataActuala = () => {
   document.querySelector(".luna-actualizata").innerText =
     " " + month[d.getMonth()];
   document.querySelector(".an-acutalizat").innerText = d.getFullYear();
+  document.querySelector(".zi-acutalizata").innerText = d.getDate();
 };
 
 setInterval(countDown, 1000);
