@@ -1762,6 +1762,7 @@ footer {
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 }
 
 .footer-info {
@@ -3066,10 +3067,8 @@ modal newsletter */
     flex-direction: row;
     flex-wrap: nowrap;
     width: 1280px;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
-    gap: 133px;
+
     padding-top: 96px;
   }
 
