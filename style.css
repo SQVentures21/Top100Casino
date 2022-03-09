@@ -1968,7 +1968,7 @@ modal despre noi */
 
 /* Modal Content/Box */
 .modal-content-despre-noi {
-  background: url("./assets/mobile/despre-noi_mobile.webp");
+  background: url("./assets/mobile/jpg/despre-noi_mobile.jpg");
   background-size: cover;
   margin: 15% auto; /* 15% from the top and centered */
   width: 328px; /* Could be more or less, depending on screen size */
@@ -2062,7 +2062,8 @@ modal .contact */
   margin-bottom: 26px;
 }
 .form-container {
-  padding-inline: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 input[type="text"],
@@ -2196,7 +2197,7 @@ modal newsletter */
   width: 328px;
   height: 560px;
   border-radius: 16px;
-  background: url("./assets/mobile/exit-pop-up_mobile.webp");
+  background: url("./assets/mobile/jpg/exit-pop-up_mobile.jpg");
   background-size: cover;
   color: white;
   display: flex;
