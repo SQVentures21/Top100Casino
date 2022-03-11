@@ -2027,6 +2027,11 @@ modal .contact */
   border-radius: 16px;
 }
 
+.contact-icons {
+  display: flex;
+  gap: 40px;
+}
+
 .modal-contact-title {
   font-family: Poppins;
   font-size: 24px;
