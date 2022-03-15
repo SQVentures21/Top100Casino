@@ -39,19 +39,19 @@ $(function () {
 
 // star 1
 
-$(".starOne-1").mouseenter(function () {
+$(".starOne-1 starOne").mouseenter(function () {
   $(".evaluare-text").text("Slab");
 });
-$(".starOne-2").mouseenter(function () {
+$(".starOne-2 starOne").mouseenter(function () {
   $(".evaluare-text").text("Decent");
 });
-$(".starOne-3").mouseenter(function () {
+$(".starOne-3 starOne").mouseenter(function () {
   $(".evaluare-text").text("Bun");
 });
-$(".starOne-4").mouseenter(function () {
+$(".starOne-4 starOne").mouseenter(function () {
   $(".evaluare-text").text("Foarte Bun");
 });
-$(".starOne-5").mouseenter(function () {
+$(".starOne-5 starOne").mouseenter(function () {
   $(".evaluare-text").text("Excelent");
 });
 
@@ -61,6 +61,8 @@ $(".starOne-5").mouseenter(function () {
 
 $(".ratingStarOne").click(function () {
   $(".evaluare-text").text("Multumim!");
+  $(".evaluare1").text("2643");
+  $(".starOne").off("mouseenter");
 });
 
 const containerStarOne = document.querySelector(".ratingStarOne");
@@ -80,24 +82,26 @@ containerStarOne.onclick = (e) => {
 
 // star 2
 
-$(".starTwo-1").mouseenter(function () {
+$(".starTwo-1 starTwo").mouseenter(function () {
   $(".evaluare-textStarTwo").text("Slab");
 });
-$(".starTwo-2").mouseenter(function () {
+$(".starTwo-2 starTwo").mouseenter(function () {
   $(".evaluare-textStarTwo").text("Decent");
 });
-$(".starTwo-3").mouseenter(function () {
+$(".starTwo-3 starTwo").mouseenter(function () {
   $(".evaluare-textStarTwo").text("Bun");
 });
-$(".starTwo-4").mouseenter(function () {
+$(".starTwo-4 starTwo").mouseenter(function () {
   $(".evaluare-textStarTwo").text("Foarte Bun");
 });
-$(".starTwo-5").mouseenter(function () {
+$(".starTwo-5 starTwo").mouseenter(function () {
   $(".evaluare-textStarTwo").text("Excelent");
 });
 
 $(".ratingStarTwo").click(function () {
   $(".evaluare-textStarTwo").text("Multumim!");
+  $(".evaluare2").text("2897");
+  $(".starTwo").off("mouseenter");
 });
 
 const containerStarTwo = document.querySelector(".ratingStarTwo");
@@ -115,24 +119,26 @@ containerStarTwo.onclick = (e) => {
 };
 
 //star3
-$(".starThree-1").mouseenter(function () {
+$(".starThree-1 starThree").mouseenter(function () {
   $(".evaluare-textStarThree").text("Slab");
 });
-$(".sstarThree-2").mouseenter(function () {
+$(".sstarThree-2 starThree").mouseenter(function () {
   $(".evaluare-textStarThree").text("Decent");
 });
-$(".starThree-3").mouseenter(function () {
+$(".starThree-3 starThree").mouseenter(function () {
   $(".evaluare-textStarThree").text("Bun");
 });
-$(".starThree-4").mouseenter(function () {
+$(".starThree-4 starThree").mouseenter(function () {
   $(".evaluare-textStarThree").text("Foarte Bun");
 });
-$(".starThree-5").mouseenter(function () {
+$(".starThree-5 starThree").mouseenter(function () {
   $(".evaluare-textStarThree").text("Excelent");
 });
 
 $(".ratingStarThree").click(function () {
   $(".evaluare-textStarThree").text("Multumim!");
+  $(".evaluare3").text("1825");
+  $(".starThree").off("mouseenter");
 });
 
 const containerStarThree = document.querySelector(".ratingStarThree");
@@ -150,24 +156,26 @@ containerStarThree.onclick = (e) => {
 };
 
 //star4
-$(".starFour-1").mouseenter(function () {
+$(".starFour-1 starFour").mouseenter(function () {
   $(".evaluare-textStarFour").text("Slab");
 });
-$(".starFour-2").mouseenter(function () {
+$(".starFour-2 starFour").mouseenter(function () {
   $(".evaluare-textStarFour").text("Decent");
 });
-$(".starFour-3").mouseenter(function () {
+$(".starFour-3 starFour").mouseenter(function () {
   $(".evaluare-textStarFour").text("Bun");
 });
-$(".starFour-4").mouseenter(function () {
+$(".starFour-4 starFour").mouseenter(function () {
   $(".evaluare-textStarFour").text("Foarte Bun");
 });
-$(".starFour-5").mouseenter(function () {
+$(".starFour-5 starFour").mouseenter(function () {
   $(".evaluare-textStarFour").text("Excelent");
 });
 
 $(".ratingStarFour").click(function () {
   $(".evaluare-textStarFour").text("Multumim!");
+  $(".evaluare4").text("2502");
+  $(".starFour").off("mouseenter");
 });
 
 const containerStarFour = document.querySelector(".ratingStarFour");
@@ -185,24 +193,26 @@ containerStarFour.onclick = (e) => {
 };
 
 //star5
-$(".starFive-1").mouseenter(function () {
+$(".starFive-1 starFive").mouseenter(function () {
   $(".evaluare-textStarFive").text("Slab");
 });
-$(".starFive-2").mouseenter(function () {
+$(".starFive-2 starFive").mouseenter(function () {
   $(".evaluare-textStarFive").text("Decent");
 });
-$(".starFive-3").mouseenter(function () {
+$(".starFive-3 starFive").mouseenter(function () {
   $(".evaluare-textStarFive").text("Bun");
 });
-$(".starFive-4").mouseenter(function () {
+$(".starFive-4 starFive").mouseenter(function () {
   $(".evaluare-textStarFive").text("Foarte Bun");
 });
-$(".starFive-5").mouseenter(function () {
+$(".starFive-5 starFive").mouseenter(function () {
   $(".evaluare-textStarFive").text("Excelent");
 });
 
 $(".ratingStarFive").click(function () {
   $(".evaluare-textStarFive").text("Multumim!");
+  $(".evaluare5").text("2108");
+  $(".starFive").off("mouseenter");
 });
 
 const containerStarFive = document.querySelector(".ratingStarFive");
@@ -220,24 +230,26 @@ containerStarFive.onclick = (e) => {
 };
 
 //star6
-$(".starSix-1").mouseenter(function () {
+$(".starSix-1 starSix").mouseenter(function () {
   $(".evaluare-textStarSix").text("Slab");
 });
-$(".starSix-2").mouseenter(function () {
+$(".starSix-2 starSix").mouseenter(function () {
   $(".evaluare-textStarSix").text("Decent");
 });
-$(".starSix-3").mouseenter(function () {
+$(".starSix-3 starSix").mouseenter(function () {
   $(".evaluare-textStarSix").text("Bun");
 });
-$(".starSix-4").mouseenter(function () {
+$(".starSix-4 starSix").mouseenter(function () {
   $(".evaluare-textStarSix").text("Foarte Bun");
 });
-$(".starSix-5").mouseenter(function () {
+$(".starSix-5 starSix").mouseenter(function () {
   $(".evaluare-textStarSix").text("Excelent");
 });
 
 $(".ratingStarSix").click(function () {
   $(".evaluare-textStarSix").text("Multumim!");
+  $(".evaluare6").text("1766");
+  $(".starSix").off("mouseenter");
 });
 
 const containerStarSix = document.querySelector(".ratingStarSix");
@@ -255,24 +267,26 @@ containerStarSix.onclick = (e) => {
 };
 
 //star7
-$(".starSeven-1").mouseenter(function () {
+$(".starSeven-1 starSeven").mouseenter(function () {
   $(".evaluare-textStarSeven").text("Slab");
 });
-$(".starSeven-2").mouseenter(function () {
+$(".starSeven-2 starSeven").mouseenter(function () {
   $(".evaluare-textStarSeven").text("Decent");
 });
-$(".starSeven-3").mouseenter(function () {
+$(".starSeven-3 starSeven").mouseenter(function () {
   $(".evaluare-textStarSeven").text("Bun");
 });
-$(".starSeven-4").mouseenter(function () {
+$(".starSeven-4 starSeven").mouseenter(function () {
   $(".evaluare-textStarSeven").text("Foarte Bun");
 });
-$(".starSeven-5").mouseenter(function () {
+$(".starSeven-5 starSeven").mouseenter(function () {
   $(".evaluare-textStarSeven").text("Excelent");
 });
 
 $(".ratingStarSeven").click(function () {
   $(".evaluare-textStarSeven").text("Multumim!");
+  $(".evaluare7").text("2445");
+  $(".starSeven").off("mouseenter");
 });
 
 const containerStarSeven = document.querySelector(".ratingStarSeven");
@@ -290,24 +304,26 @@ containerStarSeven.onclick = (e) => {
 };
 
 //star8
-$(".starEight-1").mouseenter(function () {
+$(".starEight-1 starEight").mouseenter(function () {
   $(".evaluare-textStarEight").text("Slab");
 });
-$(".starEight-2").mouseenter(function () {
+$(".starEight-2 starEight").mouseenter(function () {
   $(".evaluare-textStarEight").text("Decent");
 });
-$(".starEight-3").mouseenter(function () {
+$(".starEight-3 starEight").mouseenter(function () {
   $(".evaluare-textStarEight").text("Bun");
 });
-$(".starEight-4").mouseenter(function () {
+$(".starEight-4 starEight").mouseenter(function () {
   $(".evaluare-textStarEight").text("Foarte Bun");
 });
-$(".starEight-5").mouseenter(function () {
+$(".starEight-5 starEight").mouseenter(function () {
   $(".evaluare-textStarEight").text("Excelent");
 });
 
 $(".ratingStarEight").click(function () {
   $(".evaluare-textStarEight").text("Multumim!");
+  $(".evaluare8").text("3003");
+  $(".starEight").off("mouseenter");
 });
 
 const containerStarEight = document.querySelector(".ratingStarEight");
@@ -325,24 +341,26 @@ containerStarEight.onclick = (e) => {
 };
 
 //star9
-$(".starNine-1").mouseenter(function () {
+$(".starNine-1 starNine").mouseenter(function () {
   $(".evaluare-textStarNine").text("Slab");
 });
-$(".starNine-2").mouseenter(function () {
+$(".starNine-2 starNine").mouseenter(function () {
   $(".evaluare-textStarNine").text("Decent");
 });
-$(".starNine-3").mouseenter(function () {
+$(".starNine-3 starNine").mouseenter(function () {
   $(".evaluare-textStarNine").text("Bun");
 });
-$(".starNine-4").mouseenter(function () {
+$(".starNine-4 starNine").mouseenter(function () {
   $(".evaluare-textStarNine").text("Foarte Bun");
 });
-$(".starNine-5").mouseenter(function () {
+$(".starNine-5 starNine").mouseenter(function () {
   $(".evaluare-textStarNine").text("Excelent");
 });
 
 $(".ratingStarNine").click(function () {
   $(".evaluare-textStarNine").text("Multumim!");
+  $(".evaluare9").text("3653");
+  $(".starNine").off("mouseenter");
 });
 
 const containerStarNine = document.querySelector(".ratingStarNine");
@@ -360,24 +378,26 @@ containerStarNine.onclick = (e) => {
 };
 
 //star10
-$(".starTen-1").mouseenter(function () {
+$(".starTen-1 starTen").mouseenter(function () {
   $(".evaluare-textStarTen").text("Slab");
 });
-$(".starTen-2").mouseenter(function () {
+$(".starTen-2 starTen").mouseenter(function () {
   $(".evaluare-textStarTen").text("Decent");
 });
-$(".starTen-3").mouseenter(function () {
+$(".starTen-3 starTen").mouseenter(function () {
   $(".evaluare-textStarTen").text("Bun");
 });
-$(".starTen-4").mouseenter(function () {
+$(".starTen-4 starTen").mouseenter(function () {
   $(".evaluare-textStarTen").text("Foarte Bun");
 });
-$(".starTen-5").mouseenter(function () {
+$(".starTen-5 starTen").mouseenter(function () {
   $(".evaluare-textStarTen").text("Excelent");
 });
 
 $(".ratingStarTen").click(function () {
   $(".evaluare-textStarTen").text("Multumim!");
+  $(".evaluare10").text("3081");
+  $(".starTen").off("mouseenter");
 });
 
 const containerStarTen = document.querySelector(".ratingStarTen");
@@ -395,24 +415,26 @@ containerStarTen.onclick = (e) => {
 };
 
 //star11
-$(".starEleven-1").mouseenter(function () {
+$(".starEleven-1 starEleven").mouseenter(function () {
   $(".evaluare-textStarEleven").text("Slab");
 });
-$(".starEleven-2").mouseenter(function () {
+$(".starEleven-2 starEleven").mouseenter(function () {
   $(".evaluare-textStarEleven").text("Decent");
 });
-$(".starEleven-3").mouseenter(function () {
+$(".starEleven-3 starEleven").mouseenter(function () {
   $(".evaluare-textStarEleven").text("Bun");
 });
-$(".starEleven-4").mouseenter(function () {
+$(".starEleven-4 starEleven").mouseenter(function () {
   $(".evaluare-textStarEleven").text("Foarte Bun");
 });
-$(".starEleven-5").mouseenter(function () {
+$(".starEleven-5 starEleven").mouseenter(function () {
   $(".evaluare-textStarEleven").text("Excelent");
 });
 
 $(".ratingStarEleven").click(function () {
   $(".evaluare-textStarEleven").text("Multumim!");
+  $(".evaluare11").text("2786");
+  $(".starEleven").off("mouseenter");
 });
 
 const containerStarEleven = document.querySelector(".ratingStarEleven");
@@ -430,24 +452,26 @@ containerStarEleven.onclick = (e) => {
 };
 
 //star12
-$(".starTwelve-1").mouseenter(function () {
+$(".starTwelve-1 starTwelve").mouseenter(function () {
   $(".evaluare-textStarTwelve").text("Slab");
 });
-$(".starTwelve-2").mouseenter(function () {
+$(".starTwelve-2 starTwelve").mouseenter(function () {
   $(".evaluare-textStarTwelve").text("Decent");
 });
-$(".starTwelve-3").mouseenter(function () {
+$(".starTwelve-3 starTwelve").mouseenter(function () {
   $(".evaluare-textStarTwelve").text("Bun");
 });
-$(".starTwelve-4").mouseenter(function () {
+$(".starTwelve-4 starTwelve").mouseenter(function () {
   $(".evaluare-textStarTwelve").text("Foarte Bun");
 });
-$(".starTwelve-5").mouseenter(function () {
+$(".starTwelve-5 starTwelve").mouseenter(function () {
   $(".evaluare-textStarTwelve").text("Excelent");
 });
 
 $(".ratingStarTwelve").click(function () {
   $(".evaluare-textStarTwelve").text("Multumim!");
+  $(".evaluare12").text("2831");
+  $(".starTwelve").off("mouseenter");
 });
 
 const containerStarTwelve = document.querySelector(".ratingStarTwelve");
