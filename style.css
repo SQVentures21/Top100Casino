@@ -2027,11 +2027,6 @@ modal .contact */
   border-radius: 16px;
 }
 
-.contact-icons {
-  display: flex;
-  gap: 40px;
-}
-
 .modal-contact-title {
   font-family: Poppins;
   font-size: 24px;
@@ -2039,7 +2034,7 @@ modal .contact */
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   padding: 40px 0px 16px 16px;
 }
 
@@ -2049,7 +2044,7 @@ modal .contact */
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   padding: 0 24px 15px 24px;
 }
 
@@ -2059,19 +2054,22 @@ modal .contact */
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   padding: 0 24px 6px 24px;
 }
 
 .modal-contact-img {
-  margin-left: 24px;
   margin-bottom: 26px;
 }
 .form-container {
   padding-right: 24px;
   padding-left: 24px;
 }
-
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
 input[type="text"],
 input[type="email"],
 select,
@@ -3493,6 +3491,7 @@ modal newsletter */
     line-height: 44px;
     letter-spacing: 0em;
     text-align: center;
+    width: 280px;
   }
 
   .modal-contact-p1 {
